@@ -40,8 +40,8 @@ exact metadata/tag overlap; no vector database or external service is used.
 
 The commands demonstrate local reproducibility only. They do not establish
 production performance, legal completeness, institutional approval, third-party
-certification or eligibility beyond the participant-specific evidence retained
-outside this redacted bundle.
+certification or formal submission acceptance. The public repository URL is a
+publication record for this reviewed file set, not an organizer receipt.
 
 ## Policy Adviser Query
 

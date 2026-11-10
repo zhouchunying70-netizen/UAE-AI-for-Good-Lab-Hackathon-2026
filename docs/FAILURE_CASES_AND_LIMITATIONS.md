@@ -37,10 +37,11 @@
 - Arabic interaction, accessibility and real institutional validation are not
   implemented. A video is not required for initial submission.
 - Participant-specific ITU evidence confirms the submission mailbox and exact
-  deadline, but team name, Team Leader, roster, final GitHub URL and final
-  receipt remain unverified in this public bundle.
-- The current candidate has no remote repository, public publication, final
-  submission email package or external submission authorization.
+  deadline. Team identity is Owner-supplied. The final GitHub URL is the
+  Owner-provided public repository; the formal email receipt remains pending.
+- The public repository is published for the reviewed file set. The final
+  submission email and any organizer receipt remain separate and are not
+  implied by publication.
 - The knowledge base is metadata/tag-based, not vector retrieval, and is not an
   ITU Lab-hosted distributed knowledge base. Domain and global policy coverage
   remain incomplete.

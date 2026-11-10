@@ -2,7 +2,8 @@
 
 Basis: official event page/API snapshots captured on 2026-11-08 and the
 participant-specific eligibility/channel review retained outside this public
-bundle. Project status does not upgrade Owner authorization.
+bundle. Project status does not upgrade scenario authorization or constitute
+organizer acceptance.
 
 | Requirement | Evidence | Status | Remaining gap |
 |---|---|---|---|

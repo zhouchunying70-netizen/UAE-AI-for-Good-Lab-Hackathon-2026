@@ -5,7 +5,7 @@
 **Team:** YiYuan Qiming  
 **Team Leader:** 周玉晨 (Yuchen Zhou)  
 **Members:** Single-member team  
-**Submission status:** Local candidate only; no GitHub URL or formal receipt asserted
+**Submission status:** Public GitHub candidate published; formal email receipt not asserted
 
 ## 1. Agentic AI Solution and Use Case
 
@@ -72,9 +72,10 @@ it is not third-party certification. Hashes provide local integrity evidence,
 not legal authenticity or redistribution permission. Metrics are descriptive
 single-fixture results and every threshold remains
 `PROPOSED_NOT_VALIDATED`. There is no production, institutional, fairness,
-Arabic/accessibility or real-user validation, no ITU Lab-hosted distributed
-knowledge base and no remote reviewer-accessible GitHub repository.
+Arabic/accessibility or real-user validation, and no ITU Lab-hosted distributed
+knowledge base. The public repository is a publication record for the reviewed
+file set, not formal event acceptance or an email receipt.
 
-The technical report is locally five pages. Formal submission remains `NO_GO`
-until Owner/organizer evidence resolves the repository access route and the
-scenario authorization boundary.
+The technical report is five pages. The repository access route is resolved by
+the published Owner-provided URL; formal submission remains unconfirmed until
+the authorized email is sent and a receipt or organizer response is retained.
