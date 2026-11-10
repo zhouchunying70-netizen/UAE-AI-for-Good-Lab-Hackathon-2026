@@ -15,8 +15,9 @@ UAE time`. The Owner has supplied the final identity for this submission:
 `YiYuan Qiming`, Team Leader `周玉晨 (Yuchen Zhou)`, single-member team. The
 The reviewer-accessible repository is:
 `https://github.com/zhouchunying70-netizen/UAE-AI-for-Good-Lab-Hackathon-2026`
-The published commit is `79fc5332a8d176ab204286d4c25d479cde9342fd`. No
-submission receipt exists until the authorized email is sent and acknowledged.
+The published main branch is the Owner-provided public repository for this reviewed
+file set. No submission receipt exists until the authorized email is sent and
+acknowledged.
 
 ## What Runs
 
