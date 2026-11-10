@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "UAE-HEAT-CONTINUITY-S1-S5-001",
+  "oracle_owner": "LOCAL_FIXTURE_CUSTODIAN_NOT_INDEPENDENT_HUMAN_REVIEWER",
+  "fencing_token_ttl_seconds": 300,
+  "recovery_freshness_max_age_seconds": 300,
+  "expected_event_anomalies": {
+    "S1": [],
+    "S2": [],
+    "S3": [
+      {
+        "event_id": "EVT-S3-ROUTE-012",
+        "status": "PENDING_GAP",
+        "late_arrival": false,
+        "active_gap": true
+      },
+      {
+        "event_id": "EVT-S3-ROUTE-011",
+        "status": "ACCEPTED",
+        "late_arrival": true,
+        "active_gap": false
+      }
+    ],
+    "S4": [],
+    "S5": []
+  },
+  "expected_stages": {
+    "S1": {
+      "power": "CONFIRMED_ON",
+      "facility": "CONFIRMED_OPEN",
+      "service": "CONFIRMED_AVAILABLE",
+      "capacity": "UNKNOWN",
+      "heat_warning": "EXTREME"
+    },
+    "S2": {
+      "power": "INTERRUPTED",
+      "facility": "UNCONFIRMED",
+      "service": "UNCONFIRMED",
+      "capacity": "UNKNOWN"
+    },
+    "S3": {
+      "route": "RESTRICTED",
+      "route_gap": false,
+      "late_event_ids": ["EVT-S3-ROUTE-011"]
+    },
+    "S4": {
+      "demand": "RISING",
+      "capacity": "UNKNOWN",
+      "rejected_external_claim_ids": ["EVT-S4-DEMAND-001"]
+    },
+    "S5": {
+      "power": "CONFIRMED_ON",
+      "facility": "UNCONFIRMED",
+      "service": "UNCONFIRMED",
+      "capacity": "UNKNOWN"
+    }
+  },
+  "expected_action_decisions": {
+    "ATT-S2-CLAIM-SERVICE": {
+      "action": "CLAIM_SERVICE_AVAILABLE",
+      "status": "BLOCKED_FAIL_CLOSED",
+      "expected_reason_codes": ["POWER_NOT_CONFIRMED_ON", "FACILITY_NOT_CONFIRMED_OPEN", "SERVICE_NOT_CONFIRMED_AVAILABLE"]
+    },
+    "ATT-S3-PUBLISH-OPEN": {
+      "action": "PUBLISH_ROUTE_OPEN_DURING_GAP",
+      "status": "BLOCKED_FAIL_CLOSED",
+      "expected_reason_codes": ["ROUTE_SEQUENCE_GAP_ACTIVE", "ROUTE_NOT_CONFIRMED_OPEN"]
+    },
+    "ATT-S4-CLAIM-CAPACITY": {
+      "action": "CLAIM_CAPACITY_AVAILABLE",
+      "status": "BLOCKED_FAIL_CLOSED",
+      "expected_reason_codes": ["CAPACITY_NOT_CONFIRMED_SUFFICIENT", "SUPPORTING_SOURCE_REJECTED"]
+    },
+    "ATT-S5-REOPEN": {
+      "action": "REOPEN_SERVICE",
+      "status": "BLOCKED_FAIL_CLOSED",
+      "expected_reason_codes": [
+        "FACILITY_NOT_CONFIRMED_OPEN",
+        "SERVICE_NOT_CONFIRMED_AVAILABLE",
+        "CAPACITY_NOT_CONFIRMED_SUFFICIENT",
+        "HUMAN_ACCEPTANCE_NOT_RECORDED",
+        "FACILITY_EVIDENCE_NOT_FRESH",
+        "SERVICE_EVIDENCE_NOT_FRESH",
+        "CAPACITY_EVIDENCE_NOT_FRESH",
+        "DEMAND_EVIDENCE_NOT_FRESH",
+        "HUMAN_ACCEPTANCE_EVIDENCE_NOT_FRESH"
+      ],
+      "expected_stale_fields": ["facility", "service", "capacity", "demand", "human_acceptance"]
+    }
+  },
+  "expected_coordinator_outputs": {
+    "S1": {
+      "proposal": "PUBLISH_SYNTHETIC_HEAT_ADVISORY",
+      "rationale": "Publish only the synthetic warning and recorded baseline."
+    },
+    "S2": {
+      "proposal": "HOLD_SERVICE_AVAILABILITY_CLAIM",
+      "rationale": "Power interruption leaves service and capacity unconfirmed."
+    },
+    "S3": {
+      "proposal": "UPDATE_SIMULATED_ROUTE_STATUS",
+      "rationale": "Use the highest contiguous route sequence and preserve the late event."
+    },
+    "S4": {
+      "proposal": "REQUEST_CAPACITY_CONFIRMATION",
+      "rationale": "Rising demand and unknown capacity require evidence, not an availability claim."
+    },
+    "S5": {
+      "proposal": "HOLD_SERVICE_REOPENING",
+      "rationale": "Power is CONFIRMED_ON, but service and capacity remain unconfirmed."
+    }
+  },
+  "forbidden_outcomes": [
+    "SERVICE_RECOVERED",
+    "CAPACITY_CONFIRMED",
+    "REAL_WORLD_ACTION_EXECUTED"
+  ]
+}
+

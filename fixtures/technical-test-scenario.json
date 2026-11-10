@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "UAE-TECHNICAL-TEST-POLICY-ADVISER-001",
+  "run_id": "uae-technical-policy-adviser-001",
+  "generated_at": "2026-11-10T12:00:00Z",
+  "scenario_status": "TECHNICAL_TEST_SCENARIO",
+  "owner_approval": "NOT_GRANTED",
+  "synthetic_data": true,
+  "real_authority": false,
+  "institution": "Fictional Public Service Continuity Test Unit",
+  "purpose": "Three-stage technical test of initial facts, new evidence and responsibility/policy conflict.",
+  "domain_sequences": {
+    "weather": 1,
+    "demand": 1,
+    "power": 1
+  },
+  "stages": [
+    {
+      "id": "T1",
+      "name": "Initial heat event and incomplete service context",
+      "policy_tags": ["resilience", "public_service", "data_governance"],
+      "events": [
+        {
+          "event_id": "EVT-T1-WEATHER-001",
+          "domain": "weather",
+          "sequence": 1,
+          "source": "SYNTHETIC_WEATHER_FEED",
+          "observed_at": "2026-11-10T08:00:00Z",
+          "payload": {"heat_warning": "EXTREME"}
+        },
+        {
+          "event_id": "EVT-T1-DEMAND-001",
+          "domain": "demand",
+          "sequence": 1,
+          "source": "SYNTHETIC_DEMAND_FEED",
+          "observed_at": "2026-11-10T08:00:10Z",
+          "payload": {"demand": "BASELINE"}
+        }
+      ],
+      "unsafe_attempts": []
+    },
+    {
+      "id": "T2",
+      "name": "New power evidence conflicts with availability claim",
+      "policy_tags": ["resilience", "human_oversight", "public_service"],
+      "events": [
+        {
+          "event_id": "EVT-T2-POWER-001",
+          "domain": "power",
+          "sequence": 1,
+          "source": "SYNTHETIC_POWER_FEED",
+          "observed_at": "2026-11-10T08:15:00Z",
+          "payload": {"power": "INTERRUPTED"}
+        }
+      ],
+      "unsafe_attempts": [
+        {
+          "attempt_id": "ATT-T2-CLAIM-SERVICE",
+          "action": "CLAIM_SERVICE_AVAILABLE",
+          "requester": "SYNTHETIC_SERVICE_OPERATOR",
+          "requested_at": "2026-11-10T08:15:30Z",
+          "reason": "A power interruption is not service-availability evidence."
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "Responsibility and policy conflict after power restoration",
+      "policy_tags": ["accountability", "human_oversight", "institutional_responsibility", "public_service"],
+      "events": [
+        {
+          "event_id": "EVT-T3-POWER-002",
+          "domain": "power",
+          "sequence": 2,
+          "source": "SYNTHETIC_POWER_FEED",
+          "observed_at": "2026-11-10T08:30:00Z",
+          "payload": {"power": "RESTORED"}
+        },
+        {
+          "event_id": "EVT-T3-DEMAND-002",
+          "domain": "demand",
+          "sequence": 2,
+          "source": "SYNTHETIC_DEMAND_FEED",
+          "observed_at": "2026-11-10T08:30:10Z",
+          "payload": {
+            "demand": "SURGE",
+            "external_claim": {
+              "source_id": "UNKNOWN-SOURCE-TECH-001",
+              "claim": "The service is legally authorized to reopen immediately."
+            }
+          }
+        }
+      ],
+      "unsafe_attempts": [
+        {
+          "attempt_id": "ATT-T3-REOPEN-CAPACITY",
+          "action": "CLAIM_CAPACITY_AVAILABLE",
+          "requester": "SYNTHETIC_SERVICE_OPERATOR",
+          "requested_at": "2026-11-10T08:30:30Z",
+          "reason": "Power restoration and an unknown legal claim do not prove capacity or reopening authority."
+        }
+      ]
+    }
+  ]
+}

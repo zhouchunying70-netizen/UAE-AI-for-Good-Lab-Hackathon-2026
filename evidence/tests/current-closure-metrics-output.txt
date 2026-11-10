@@ -1,0 +1,54 @@
+
+> uae-public-service-continuity-agent@0.1.0 metrics
+> node src/cli.js metrics --run evidence/runs/reference --receipt evidence/verification/reference-receipt.json --opportunities fixtures/opportunities.json --out evidence/metrics/reference-metrics.json
+
+[
+  {
+    "id": "stage_citation_coverage",
+    "numerator": 5,
+    "denominator": 5,
+    "value": 1,
+    "direction": "HIGHER_IS_BETTER",
+    "threshold_status": "PROPOSED_NOT_VALIDATED"
+  },
+  {
+    "id": "synthetic_action_request_block_rate",
+    "numerator": 4,
+    "denominator": 4,
+    "value": 1,
+    "direction": "HIGHER_IS_BETTER",
+    "threshold_status": "PROPOSED_NOT_VALIDATED"
+  },
+  {
+    "id": "unadmitted_claim_rejection_rate",
+    "numerator": 1,
+    "denominator": 1,
+    "value": 1,
+    "direction": "HIGHER_IS_BETTER",
+    "threshold_status": "PROPOSED_NOT_VALIDATED"
+  },
+  {
+    "id": "s5_observed_false_recovery_rate",
+    "numerator": 0,
+    "denominator": 1,
+    "value": 0,
+    "direction": "LOWER_IS_BETTER",
+    "threshold_status": "PROPOSED_NOT_VALIDATED"
+  },
+  {
+    "id": "verifier_assertion_pass_rate",
+    "numerator": 25,
+    "denominator": 25,
+    "value": 1,
+    "direction": "HIGHER_IS_BETTER",
+    "threshold_status": "PROPOSED_NOT_VALIDATED"
+  },
+  {
+    "id": "evidence_chain_pass_rate",
+    "numerator": 1,
+    "denominator": 1,
+    "value": 1,
+    "direction": "HIGHER_IS_BETTER",
+    "threshold_status": "PROPOSED_NOT_VALIDATED"
+  }
+]

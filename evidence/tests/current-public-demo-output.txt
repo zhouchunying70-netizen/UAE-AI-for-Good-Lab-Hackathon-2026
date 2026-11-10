@@ -1,0 +1,39 @@
+
+> uae-public-service-continuity-agent@0.1.0 demo:public
+> node src/cli.js run --fixture fixtures/s1-s5.json --out evidence/runs/reference --source-verification metadata-only
+
+{
+  "status": "RUN_COMPLETE",
+  "run_id": "uae-s1-s5-reference-001",
+  "manifest": {
+    "schema_version": "1.0",
+    "run_id": "uae-s1-s5-reference-001",
+    "files": {
+      "run.json": "63fde22c7e4ece93b335ca89bee6ce77b5996704836a298d865b7a249de48a26",
+      "audit.jsonl": "bd54b21dac82f13827b916e8e7b49cbdee43ff8a61c1b8bfc4d599be03cbc9de"
+    },
+    "inputs": {
+      "fixture": {
+        "logical_path": "fixtures/s1-s5.json",
+        "sha256": "d5e2c7d0e244aa360a13973acd7cff02a60de21ddbf72aeae0bd9a12554bb9c5"
+      },
+      "sources": {
+        "logical_path": "knowledge-base/sources.json",
+        "sha256": "0e98e732acaea046858ffd7f937945512bceeeae9d67e214ca6d9019cdb3ac9e"
+      },
+      "claims": {
+        "logical_path": "knowledge-base/claims.json",
+        "sha256": "0a116ef863458d999a6b309a360ccefded657cf059a71b6e72cd381b5e66303a"
+      }
+    },
+    "knowledge_base_verification": {
+      "mode": "METADATA_ONLY_PUBLIC_BUNDLE",
+      "status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE",
+      "raw_source_bytes_verified": false,
+      "source_metadata_records_checked": 12,
+      "admitted_source_records": 7
+    },
+    "audit_chain_head": "38fb3df9ee061176b7b2b29ef09ba3b606c711f4fa1e789af62b216accf6eff7",
+    "audit_record_count": 57
+  }
+}

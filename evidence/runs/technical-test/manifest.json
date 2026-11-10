@@ -1,0 +1,31 @@
+{
+  "audit_chain_head": "3722073edfcee7aac82a5869104a56e9189ba31600ec6ec9246f48365e6e36cd",
+  "audit_record_count": 30,
+  "files": {
+    "audit.jsonl": "596719bb55e3b3ffb803ae47421d745f60842b1db45b305f8b83f1b41a900729",
+    "run.json": "5bc1c928e4d311c1863bdb2e6ca67f261da48073d22384ce3f2ed779a16f486b"
+  },
+  "inputs": {
+    "claims": {
+      "logical_path": "knowledge-base/claims.json",
+      "sha256": "0a116ef863458d999a6b309a360ccefded657cf059a71b6e72cd381b5e66303a"
+    },
+    "fixture": {
+      "logical_path": "fixtures/technical-test-scenario.json",
+      "sha256": "f3dccc055a4a76540457b82f40a735dce324c27401f557c50075df35ee91a924"
+    },
+    "sources": {
+      "logical_path": "knowledge-base/sources.json",
+      "sha256": "0e98e732acaea046858ffd7f937945512bceeeae9d67e214ca6d9019cdb3ac9e"
+    }
+  },
+  "knowledge_base_verification": {
+    "admitted_source_records": 7,
+    "mode": "METADATA_ONLY_PUBLIC_BUNDLE",
+    "raw_source_bytes_verified": false,
+    "source_metadata_records_checked": 12,
+    "status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+  },
+  "run_id": "uae-technical-policy-adviser-001",
+  "schema_version": "1.0"
+}

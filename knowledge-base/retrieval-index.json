@@ -1,0 +1,337 @@
+{
+  "counts": {
+    "admitted_claims": 8,
+    "source_records": 12,
+    "supporting_uae_sources": 7
+  },
+  "generated_at": "2026-11-10T05:32:01.193Z",
+  "retrieval_mode": "EXACT_METADATA_TAG_OVERLAP",
+  "schema_version": "1.0",
+  "semantic_ranking": "NOT_IMPLEMENTED",
+  "source_byte_verification": "METADATA_ONLY_PUBLIC_BUNDLE",
+  "source_records": [
+    {
+      "actual_sha256": "5b1fd496c98c2364f0cf20686c850a6bd1cb2bec30044bb850c7224082cd97f2",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-001",
+      "issuer": "United Arab Emirates Government",
+      "official_url": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T10:04:23Z",
+      "scope": "Federal UAE data-protection overview, including Federal Decree Law No. 45 of 2021",
+      "title": "Data protection laws",
+      "version_or_page_updated": "2025-12-04"
+    },
+    {
+      "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-002",
+      "issuer": "United Arab Emirates Government",
+      "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T10:04:23Z",
+      "scope": "UAE digital-government strategy dimensions and maturity framing",
+      "title": "The UAE Digital Government Strategy 2025",
+      "version_or_page_updated": "2026-10-21"
+    },
+    {
+      "actual_sha256": "a733f219225a3862278fec3246598ad093d31b7cc014598faf66cdf151c8cc6e",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-003",
+      "issuer": "United Arab Emirates Government",
+      "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Ai/uae-strategy-for-artificial-intelligence",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T11:43:45Z",
+      "scope": "National AI strategy objectives, sectors and government-service direction",
+      "title": "UAE Strategy for Artificial Intelligence",
+      "version_or_page_updated": "2024-12-30"
+    },
+    {
+      "actual_sha256": "1f6c8dd3e3ad41eedd59af32817202d0e72c3967918a942695981984ead835d9",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-004",
+      "issuer": "United Arab Emirates Government",
+      "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T10:04:23Z",
+      "scope": "UAE principles for responsible AI, privacy, transparency, human oversight and accountability",
+      "title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+      "version_or_page_updated": "2026-07-03"
+    },
+    {
+      "actual_sha256": "0ccff198d3847d88d07b48e75d5e9094a7449f347780f247cff3b32112cfef8d",
+      "admission": "REGISTERED_METADATA_ONLY_ENGLISH_POLICY_TEXT_NOT_CAPTURED",
+      "id": "SRC-UAE-005",
+      "issuer": "Telecommunications and Digital Government Regulatory Authority",
+      "official_url": "https://dgov.tdra.gov.ae/en/publications/digital-customer-and-digital-government-service-policy/",
+      "redistribution": "OFFICIAL_LINK_METADATA_ONLY",
+      "retrieved_at": "2026-11-08T10:04:23Z",
+      "scope": "Federal digital-government service policy publication page",
+      "title": "Digital Customer and Digital Government Service Policy",
+      "version_or_page_updated": null
+    },
+    {
+      "actual_sha256": "c5604dc6e9261146cb943490f4d234ecf4b24313724c9e65ef44752898aa2748",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-006",
+      "issuer": "UAE Ministry of Cabinet Affairs, Prime Minister's Office",
+      "official_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T11:43:45Z",
+      "scope": "AI adoption framework, operating model, risk management and maturity for UAE government services",
+      "title": "AI Adoption Guideline in Government Services",
+      "version_or_page_updated": "May 2023 publication asset"
+    },
+    {
+      "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-007",
+      "issuer": "UAE Cybersecurity Council via the Official UAE Government Portal",
+      "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T11:43:45Z",
+      "scope": "National cyber-incident roles, coordination, lifecycle, reporting, recovery and continuous learning",
+      "title": "Cyber Incident Response Plan",
+      "version_or_page_updated": "Portal summary linking CIRP v2.0"
+    },
+    {
+      "actual_sha256": "21d404a2d57fcfb321bbb7c41739952e8c9390510b3c562891afb6da2918d390",
+      "admission": "ADMITTED_FOR_SCOPED_CLAIMS",
+      "id": "SRC-UAE-008",
+      "issuer": "United Arab Emirates Government",
+      "official_url": "https://u.ae/en/about-the-uae/digital-uae/digital-transformation/cooperation-and-collaboration/overseeing-digital-transformation-in-the-uae",
+      "redistribution": "OFFICIAL_LINK_METADATA_HASH_AND_SHORT_PARAPHRASE_ONLY",
+      "retrieved_at": "2026-11-08T11:43:45Z",
+      "scope": "Federal and emirate-level digital transformation responsibilities",
+      "title": "Overseeing digital transformation in the UAE",
+      "version_or_page_updated": "2024-12-30"
+    },
+    {
+      "actual_sha256": "65759498ab5258407d223e5f438d107434901d07aa61bc487b1b2bd84868e1ff",
+      "admission": "REGISTERED_FOR_LICENSE_BOUNDARY_ONLY",
+      "id": "SRC-UAE-009",
+      "issuer": "Telecommunications and Digital Government Regulatory Authority",
+      "official_url": "https://u.ae/en/Footer/Copyright",
+      "redistribution": "DO_NOT_REDISTRIBUTE_RAW_PORTAL_CONTENT",
+      "retrieved_at": "2026-11-08T11:43:45Z",
+      "scope": "Copyright and reuse boundary for UAE portal content",
+      "title": "Copyright - The Official Platform of the UAE Government",
+      "version_or_page_updated": null
+    },
+    {
+      "actual_sha256": "44c09ba8122d6ae9f8e230ca7d7f782d1f1013a4820bcdb3ee1c40a65efb179c",
+      "admission": "REGISTERED_FOR_ARCHITECTURE_MAPPING",
+      "id": "SRC-ITU-001",
+      "issuer": "ITU-T",
+      "official_url": "https://www.itu.int/rec/T-REC-Y.3172/en",
+      "redistribution": "OFFICIAL_LINK_METADATA_ONLY",
+      "retrieved_at": "2026-11-08T10:04:23Z",
+      "scope": "Technical architecture mapping; not UAE legal authorization",
+      "title": "Recommendation Y.3172: Architectural framework for machine learning in future networks including IMT-2020",
+      "version_or_page_updated": "Y.3172 (06/2019)"
+    },
+    {
+      "actual_sha256": "71191768d46b60778c15f8d62b162aff73a319785cfc31ebf76bb944b0c68273",
+      "admission": "REGISTERED_FOR_READINESS_MAPPING_CONTENT_REVIEW_PARTIAL",
+      "id": "SRC-ITU-002",
+      "issuer": "International Telecommunication Union",
+      "official_url": "https://www.itu.int/dms_pub/itu-t/opb/ai4g/T-AI4G-AI4GOOD-2025-6-PDF-E.pdf",
+      "redistribution": "OFFICIAL_LINK_METADATA_ONLY",
+      "retrieved_at": "2026-11-08T10:04:23Z",
+      "scope": "AI readiness mapping; not UAE legal authorization",
+      "title": "AI Ready - Analysis Towards a Standardized Readiness Framework",
+      "version_or_page_updated": "Report 2.0, January 2026"
+    },
+    {
+      "actual_sha256": "d4dea5e2863df34974527cb75bc3b86ab1bd666df2b7d5ffcb11241fd4ca99ee",
+      "admission": "REGISTERED_FOR_LICENSE_BOUNDARY_ONLY",
+      "id": "SRC-ITU-003",
+      "issuer": "International Telecommunication Union",
+      "official_url": "https://www.itu.int/en/about/Pages/terms-of-use.aspx",
+      "redistribution": "METADATA_LINK_AND_SHORT_PARAPHRASE; PUBLICATIONS_REQUIRE_SOURCE_SPECIFIC_REVIEW",
+      "retrieved_at": "2026-11-08T11:04:17Z",
+      "scope": "Website content reuse and source-specific publication terms",
+      "title": "ITU Website Terms of Use",
+      "version_or_page_updated": null
+    }
+  ],
+  "tag_index": {
+    "accountability": [
+      {
+        "claim_id": "CLM-UAE-004",
+        "source_id": "SRC-UAE-004"
+      },
+      {
+        "claim_id": "CLM-UAE-006",
+        "source_id": "SRC-UAE-006"
+      },
+      {
+        "claim_id": "CLM-UAE-007",
+        "source_id": "SRC-UAE-007"
+      }
+    ],
+    "ai_strategy": [
+      {
+        "claim_id": "CLM-UAE-005",
+        "source_id": "SRC-UAE-003"
+      },
+      {
+        "claim_id": "CLM-UAE-006",
+        "source_id": "SRC-UAE-006"
+      }
+    ],
+    "coordination": [
+      {
+        "claim_id": "CLM-UAE-007",
+        "source_id": "SRC-UAE-007"
+      },
+      {
+        "claim_id": "CLM-UAE-008",
+        "source_id": "SRC-UAE-008"
+      }
+    ],
+    "crisis": [
+      {
+        "claim_id": "CLM-UAE-002",
+        "source_id": "SRC-UAE-002"
+      }
+    ],
+    "cybersecurity": [
+      {
+        "claim_id": "CLM-UAE-007",
+        "source_id": "SRC-UAE-007"
+      }
+    ],
+    "data_governance": [
+      {
+        "claim_id": "CLM-UAE-001",
+        "source_id": "SRC-UAE-001"
+      },
+      {
+        "claim_id": "CLM-UAE-003",
+        "source_id": "SRC-UAE-002"
+      }
+    ],
+    "digital_government": [
+      {
+        "claim_id": "CLM-UAE-005",
+        "source_id": "SRC-UAE-003"
+      }
+    ],
+    "evidence": [
+      {
+        "claim_id": "CLM-UAE-003",
+        "source_id": "SRC-UAE-002"
+      },
+      {
+        "claim_id": "CLM-UAE-007",
+        "source_id": "SRC-UAE-007"
+      }
+    ],
+    "human_oversight": [
+      {
+        "claim_id": "CLM-UAE-004",
+        "source_id": "SRC-UAE-004"
+      },
+      {
+        "claim_id": "CLM-UAE-006",
+        "source_id": "SRC-UAE-006"
+      },
+      {
+        "claim_id": "CLM-UAE-008",
+        "source_id": "SRC-UAE-008"
+      }
+    ],
+    "innovation": [
+      {
+        "claim_id": "CLM-UAE-005",
+        "source_id": "SRC-UAE-003"
+      }
+    ],
+    "institutional_responsibility": [
+      {
+        "claim_id": "CLM-UAE-008",
+        "source_id": "SRC-UAE-008"
+      }
+    ],
+    "privacy": [
+      {
+        "claim_id": "CLM-UAE-001",
+        "source_id": "SRC-UAE-001"
+      },
+      {
+        "claim_id": "CLM-UAE-004",
+        "source_id": "SRC-UAE-004"
+      }
+    ],
+    "proactive": [
+      {
+        "claim_id": "CLM-UAE-002",
+        "source_id": "SRC-UAE-002"
+      }
+    ],
+    "public_service": [
+      {
+        "claim_id": "CLM-UAE-002",
+        "source_id": "SRC-UAE-002"
+      },
+      {
+        "claim_id": "CLM-UAE-003",
+        "source_id": "SRC-UAE-002"
+      },
+      {
+        "claim_id": "CLM-UAE-005",
+        "source_id": "SRC-UAE-003"
+      },
+      {
+        "claim_id": "CLM-UAE-006",
+        "source_id": "SRC-UAE-006"
+      },
+      {
+        "claim_id": "CLM-UAE-008",
+        "source_id": "SRC-UAE-008"
+      }
+    ],
+    "resilience": [
+      {
+        "claim_id": "CLM-UAE-002",
+        "source_id": "SRC-UAE-002"
+      },
+      {
+        "claim_id": "CLM-UAE-007",
+        "source_id": "SRC-UAE-007"
+      }
+    ],
+    "responsible_ai": [
+      {
+        "claim_id": "CLM-UAE-004",
+        "source_id": "SRC-UAE-004"
+      }
+    ],
+    "risk_management": [
+      {
+        "claim_id": "CLM-UAE-006",
+        "source_id": "SRC-UAE-006"
+      }
+    ],
+    "synthetic_data": [
+      {
+        "claim_id": "CLM-UAE-001",
+        "source_id": "SRC-UAE-001"
+      }
+    ],
+    "transparency": [
+      {
+        "claim_id": "CLM-UAE-004",
+        "source_id": "SRC-UAE-004"
+      }
+    ],
+    "trust": [
+      {
+        "claim_id": "CLM-UAE-003",
+        "source_id": "SRC-UAE-002"
+      }
+    ]
+  },
+  "vectorization": "NOT_IMPLEMENTED"
+}

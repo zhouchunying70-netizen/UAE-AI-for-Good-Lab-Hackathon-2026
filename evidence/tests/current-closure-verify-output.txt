@@ -1,0 +1,9 @@
+
+> uae-public-service-continuity-agent@0.1.0 verify:public
+> node src/cli.js verify --run evidence/runs/reference --oracle verifier/oracles/s1-s5.oracle.json --fixture fixtures/s1-s5.json --out evidence/verification/reference-receipt.json --source-verification metadata-only
+
+{
+  "passed": 25,
+  "failed": 0,
+  "total": 25
+}

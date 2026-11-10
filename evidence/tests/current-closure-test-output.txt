@@ -1,0 +1,32 @@
+
+> uae-public-service-continuity-agent@0.1.0 test
+> UAE_KB_VERIFICATION_MODE=METADATA_ONLY_PUBLIC_BUNDLE node --test
+
+✔ reference S1-S5 run passes all verifier assertions (20.260916ms)
+✔ policy adviser returns scoped citations and an explicit authority gap (0.624458ms)
+✔ two runs are byte-for-byte deterministic (6.545791ms)
+✔ audit payload tampering is detected even if the file manifest is recomputed (6.463166ms)
+✔ false S5 recovery fails semantic verification after manifest recomputation (6.517208ms)
+✔ oracle expectations do not appear in execution artifacts (3.409292ms)
+✔ completed stage Agent facts cannot be mutated by later stages (5.810916ms)
+✔ source integrity metadata or byte mismatch prevents knowledge-base admission (1.380541ms)
+✔ service availability without confirmed power and facility is rejected (0.202125ms)
+✔ event domains reject payload fields owned by another domain (0.197459ms)
+✔ event identity is globally unique across domains (0.067667ms)
+✔ fencing token rejects replay, expiry and revocation (0.111625ms)
+✔ verifier refuses to overwrite its Oracle (2.983334ms)
+✔ verifier rejects a symlink alias that targets its Oracle (3.273542ms)
+✔ Agent-state tampering fails three-way consistency verification (6.040666ms)
+✔ Policy, Coordinator and token tampering fails semantic verification (5.522917ms)
+✔ coordinated anomaly and fake-decision tampering fails independent semantics (7.819792ms)
+✔ verifier rejects decision multiplicity, cross-stage relocation and undeclared audit records (28.728083ms)
+✔ recovery authorization rejects otherwise confirmed but stale evidence (0.174834ms)
+✔ metrics derive denominators and flag a mismatched declaration (6.023584ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 162.640625

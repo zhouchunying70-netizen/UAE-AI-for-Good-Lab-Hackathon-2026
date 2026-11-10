@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "id": "CLM-UAE-001",
+      "source_id": "SRC-UAE-001",
+      "paraphrase": "The UAE personal-data framework governs data management and protection, including confidentiality, privacy and duties of parties processing personal data.",
+      "locator": "Personal Data Protection Law section",
+      "tags": [
+        "data_governance",
+        "privacy",
+        "synthetic_data"
+      ],
+      "applicability": "Use as a privacy and data-governance constraint; not as operational authority for public-service decisions.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-002",
+      "source_id": "SRC-UAE-002",
+      "paraphrase": "The UAE Digital Government Strategy includes resilience and proactive crisis capability among its eight dimensions.",
+      "locator": "Dimensions section",
+      "tags": [
+        "resilience",
+        "crisis",
+        "public_service",
+        "proactive"
+      ],
+      "applicability": "Strategic design principle; it does not authorize a simulated Agent to reopen or operate a real service.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-003",
+      "source_id": "SRC-UAE-002",
+      "paraphrase": "The strategy's data-driven dimension treats data as a strategic asset and calls for rules and ethical principles for trustworthy and safe reuse.",
+      "locator": "Data-driven dimension",
+      "tags": [
+        "data_governance",
+        "trust",
+        "evidence",
+        "public_service"
+      ],
+      "applicability": "Supports traceable evidence handling and does not establish legal sufficiency of this prototype.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-004",
+      "source_id": "SRC-UAE-004",
+      "paraphrase": "The UAE AI Charter emphasizes responsible use, privacy and data security, transparency, human oversight, governance and accountability.",
+      "locator": "Charter principles",
+      "tags": [
+        "responsible_ai",
+        "privacy",
+        "transparency",
+        "human_oversight",
+        "accountability"
+      ],
+      "applicability": "Governs prototype behavior and escalation; it is not a delegation of UAE institutional authority.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-005",
+      "source_id": "SRC-UAE-003",
+      "paraphrase": "The UAE AI strategy links AI adoption to stronger government performance, integrated digital systems and future services across multiple sectors.",
+      "locator": "Strategy aims and sectors",
+      "tags": [
+        "ai_strategy",
+        "public_service",
+        "innovation",
+        "digital_government"
+      ],
+      "applicability": "Supports national AI alignment and public-service relevance; it does not validate this scenario or authorize operations.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-006",
+      "source_id": "SRC-UAE-006",
+      "paraphrase": "The UAE government-services AI adoption guideline calls for a national framework, entity-level operating model, staged use-case development and explicit AI risk management.",
+      "locator": "PDF contents and sections on pages 10-13, 58-95",
+      "tags": [
+        "public_service",
+        "human_oversight",
+        "accountability",
+        "risk_management",
+        "ai_strategy"
+      ],
+      "applicability": "Supports the prototype's staged workflow, risk controls and human escalation; it is guidance rather than deployment approval.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-007",
+      "source_id": "SRC-UAE-007",
+      "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+      "locator": "Portal summary and role/lifecycle sections",
+      "tags": [
+        "resilience",
+        "evidence",
+        "accountability",
+        "coordination",
+        "cybersecurity"
+      ],
+      "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+      "status": "ADMITTED"
+    },
+    {
+      "id": "CLM-UAE-008",
+      "source_id": "SRC-UAE-008",
+      "paraphrase": "Federal and emirate-level digital transformation responsibilities are assigned to different named entities, so a simulated coordinator must not imply authority held by those bodies.",
+      "locator": "Federal and emirate responsibility sections",
+      "tags": [
+        "public_service",
+        "human_oversight",
+        "coordination",
+        "institutional_responsibility"
+      ],
+      "applicability": "Supports role-boundary and escalation controls while preserving the fictional coordinator label.",
+      "status": "ADMITTED"
+    }
+  ]
+}

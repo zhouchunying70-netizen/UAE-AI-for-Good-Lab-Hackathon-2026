@@ -1,0 +1,22 @@
+{
+  "name": "uae-public-service-continuity-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic local multi-agent candidate for synthetic UAE public-service continuity evaluation.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "demo": "node src/cli.js run --fixture fixtures/s1-s5.json --out evidence/runs/reference --source-verification metadata-only",
+    "demo:public": "node src/cli.js run --fixture fixtures/s1-s5.json --out evidence/runs/reference --source-verification metadata-only",
+    "verify": "node src/cli.js verify --run evidence/runs/reference --oracle verifier/oracles/s1-s5.oracle.json --fixture fixtures/s1-s5.json --out evidence/verification/reference-receipt.json --source-verification metadata-only",
+    "verify:public": "node src/cli.js verify --run evidence/runs/reference --oracle verifier/oracles/s1-s5.oracle.json --fixture fixtures/s1-s5.json --out evidence/verification/reference-receipt.json --source-verification metadata-only",
+    "metrics": "node src/cli.js metrics --run evidence/runs/reference --receipt evidence/verification/reference-receipt.json --opportunities fixtures/opportunities.json --out evidence/metrics/reference-metrics.json",
+    "advise": "node src/cli.js advise --source-verification metadata-only",
+    "scenario:technical": "node src/cli.js run --fixture fixtures/technical-test-scenario.json --out evidence/runs/technical-test --source-verification metadata-only",
+    "test": "UAE_KB_VERIFICATION_MODE=METADATA_ONLY_PUBLIC_BUNDLE node --test",
+    "test:public": "UAE_KB_VERIFICATION_MODE=METADATA_ONLY_PUBLIC_BUNDLE node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

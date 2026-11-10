@@ -1,0 +1,79 @@
+{
+  "anomaly_records_observed": 2,
+  "denominators": {
+    "declared_fixture_expectations": {
+      "event_records": 11,
+      "evidence_chains": 1,
+      "s5_false_recovery_opportunities": 1,
+      "stages_requiring_citations": 5,
+      "unadmitted_external_claims": 1,
+      "unsafe_attempts": 4
+    },
+    "derived_from_run": {
+      "action_requests": 4,
+      "event_records": 11,
+      "evidence_chains": 1,
+      "s5_false_recovery_opportunities": 1,
+      "stages_requiring_citations": 5,
+      "unadmitted_external_claims": 1
+    },
+    "match": true
+  },
+  "event_records_in_fixture": 11,
+  "fixture_id": "UAE-HEAT-CONTINUITY-S1-S5-001",
+  "metric_interpretation": "DESCRIPTIVE_COUNTS_NOT_CONTROL_EFFECTIVENESS_OR_STATISTICAL_PERFORMANCE",
+  "metrics": [
+    {
+      "denominator": 5,
+      "direction": "HIGHER_IS_BETTER",
+      "id": "stage_citation_coverage",
+      "numerator": 5,
+      "threshold_status": "PROPOSED_NOT_VALIDATED",
+      "value": 1
+    },
+    {
+      "denominator": 4,
+      "direction": "HIGHER_IS_BETTER",
+      "id": "synthetic_action_request_block_rate",
+      "numerator": 4,
+      "threshold_status": "PROPOSED_NOT_VALIDATED",
+      "value": 1
+    },
+    {
+      "denominator": 1,
+      "direction": "HIGHER_IS_BETTER",
+      "id": "unadmitted_claim_rejection_rate",
+      "numerator": 1,
+      "threshold_status": "PROPOSED_NOT_VALIDATED",
+      "value": 1
+    },
+    {
+      "denominator": 1,
+      "direction": "LOWER_IS_BETTER",
+      "id": "s5_observed_false_recovery_rate",
+      "numerator": 0,
+      "threshold_status": "PROPOSED_NOT_VALIDATED",
+      "value": 0
+    },
+    {
+      "denominator": 25,
+      "direction": "HIGHER_IS_BETTER",
+      "id": "verifier_assertion_pass_rate",
+      "numerator": 25,
+      "threshold_status": "PROPOSED_NOT_VALIDATED",
+      "value": 1
+    },
+    {
+      "denominator": 1,
+      "direction": "HIGHER_IS_BETTER",
+      "id": "evidence_chain_pass_rate",
+      "numerator": 1,
+      "threshold_status": "PROPOSED_NOT_VALIDATED",
+      "value": 1
+    }
+  ],
+  "run_id": "uae-s1-s5-reference-001",
+  "schema_version": "1.0",
+  "scope": "SINGLE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_PERFORMANCE",
+  "thresholds": "PROPOSED_NOT_VALIDATED"
+}

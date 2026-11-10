@@ -1,0 +1,1286 @@
+{
+  "assertions": [
+    {
+      "actual": "UAE-HEAT-CONTINUITY-S1-S5-001",
+      "expected": "UAE-HEAT-CONTINUITY-S1-S5-001",
+      "id": "fixture-id",
+      "pass": true
+    },
+    {
+      "actual": "63fde22c7e4ece93b335ca89bee6ce77b5996704836a298d865b7a249de48a26",
+      "expected": "63fde22c7e4ece93b335ca89bee6ce77b5996704836a298d865b7a249de48a26",
+      "id": "run-hash",
+      "pass": true
+    },
+    {
+      "actual": "bd54b21dac82f13827b916e8e7b49cbdee43ff8a61c1b8bfc4d599be03cbc9de",
+      "expected": "bd54b21dac82f13827b916e8e7b49cbdee43ff8a61c1b8bfc4d599be03cbc9de",
+      "id": "audit-hash",
+      "pass": true
+    },
+    {
+      "actual": {
+        "failures": [],
+        "head": "38fb3df9ee061176b7b2b29ef09ba3b606c711f4fa1e789af62b216accf6eff7",
+        "identity_valid": true,
+        "record_count": 57,
+        "valid": true
+      },
+      "expected": {
+        "head": "38fb3df9ee061176b7b2b29ef09ba3b606c711f4fa1e789af62b216accf6eff7",
+        "record_count": 57,
+        "run_id": "uae-s1-s5-reference-001",
+        "stage_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "id": "audit-chain",
+      "pass": true
+    },
+    {
+      "actual": {
+        "manifest": {
+          "claims": {
+            "logical_path": "knowledge-base/claims.json",
+            "sha256": "0a116ef863458d999a6b309a360ccefded657cf059a71b6e72cd381b5e66303a"
+          },
+          "fixture": {
+            "logical_path": "fixtures/s1-s5.json",
+            "sha256": "d5e2c7d0e244aa360a13973acd7cff02a60de21ddbf72aeae0bd9a12554bb9c5"
+          },
+          "sources": {
+            "logical_path": "knowledge-base/sources.json",
+            "sha256": "0e98e732acaea046858ffd7f937945512bceeeae9d67e214ca6d9019cdb3ac9e"
+          }
+        },
+        "manifest_knowledge_base_verification": {
+          "admitted_source_records": 7,
+          "mode": "METADATA_ONLY_PUBLIC_BUNDLE",
+          "raw_source_bytes_verified": false,
+          "source_metadata_records_checked": 12,
+          "status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+        },
+        "run": {
+          "claims": "0a116ef863458d999a6b309a360ccefded657cf059a71b6e72cd381b5e66303a",
+          "fixture": "d5e2c7d0e244aa360a13973acd7cff02a60de21ddbf72aeae0bd9a12554bb9c5",
+          "knowledge_base_verification": {
+            "admitted_source_records": 7,
+            "mode": "METADATA_ONLY_PUBLIC_BUNDLE",
+            "raw_source_bytes_verified": false,
+            "source_metadata_records_checked": 12,
+            "status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+          },
+          "sources": "0e98e732acaea046858ffd7f937945512bceeeae9d67e214ca6d9019cdb3ac9e"
+        }
+      },
+      "expected": {
+        "claims": "0a116ef863458d999a6b309a360ccefded657cf059a71b6e72cd381b5e66303a",
+        "fixture": "d5e2c7d0e244aa360a13973acd7cff02a60de21ddbf72aeae0bd9a12554bb9c5",
+        "knowledge_base_verification": {
+          "admitted_source_records": 7,
+          "mode": "METADATA_ONLY_PUBLIC_BUNDLE",
+          "raw_source_bytes_verified": false,
+          "source_metadata_records_checked": 12,
+          "status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+        },
+        "sources": "0e98e732acaea046858ffd7f937945512bceeeae9d67e214ca6d9019cdb3ac9e"
+      },
+      "id": "input-bindings",
+      "pass": true
+    },
+    {
+      "actual": {
+        "provider_calls": 0,
+        "real_authority": false,
+        "real_world_actions": 0,
+        "synthetic_data": true
+      },
+      "expected": true,
+      "id": "synthetic-only",
+      "pass": true
+    },
+    {
+      "actual": {
+        "capacity": "UNKNOWN",
+        "demand": "BASELINE",
+        "evidence_observed_at": {
+          "capacity": "2026-07-15T08:00:40Z",
+          "demand": null,
+          "facility": "2026-07-15T08:00:20Z",
+          "heat_warning": "2026-07-15T08:00:00Z",
+          "human_acceptance": null,
+          "power": "2026-07-15T08:00:10Z",
+          "route": "2026-07-15T08:00:50Z",
+          "service": "2026-07-15T08:00:30Z"
+        },
+        "facility": "CONFIRMED_OPEN",
+        "heat_warning": "EXTREME",
+        "human_acceptance": "NOT_PROVIDED",
+        "late_event_ids": [],
+        "power": "CONFIRMED_ON",
+        "rejected_external_claim_ids": [],
+        "route": "OPEN",
+        "route_gap": false,
+        "service": "CONFIRMED_AVAILABLE"
+      },
+      "expected": {
+        "capacity": "UNKNOWN",
+        "facility": "CONFIRMED_OPEN",
+        "heat_warning": "EXTREME",
+        "power": "CONFIRMED_ON",
+        "service": "CONFIRMED_AVAILABLE"
+      },
+      "id": "state-S1",
+      "pass": true
+    },
+    {
+      "actual": {
+        "capacity": "UNKNOWN",
+        "demand": "BASELINE",
+        "evidence_observed_at": {
+          "capacity": "2026-07-15T08:12:00Z",
+          "demand": null,
+          "facility": "2026-07-15T08:12:00Z",
+          "heat_warning": "2026-07-15T08:00:00Z",
+          "human_acceptance": null,
+          "power": "2026-07-15T08:12:00Z",
+          "route": "2026-07-15T08:00:50Z",
+          "service": "2026-07-15T08:12:00Z"
+        },
+        "facility": "UNCONFIRMED",
+        "heat_warning": "EXTREME",
+        "human_acceptance": "NOT_PROVIDED",
+        "late_event_ids": [],
+        "power": "INTERRUPTED",
+        "rejected_external_claim_ids": [],
+        "route": "OPEN",
+        "route_gap": false,
+        "service": "UNCONFIRMED"
+      },
+      "expected": {
+        "capacity": "UNKNOWN",
+        "facility": "UNCONFIRMED",
+        "power": "INTERRUPTED",
+        "service": "UNCONFIRMED"
+      },
+      "id": "state-S2",
+      "pass": true
+    },
+    {
+      "actual": {
+        "capacity": "UNKNOWN",
+        "demand": "BASELINE",
+        "evidence_observed_at": {
+          "capacity": "2026-07-15T08:12:00Z",
+          "demand": null,
+          "facility": "2026-07-15T08:12:00Z",
+          "heat_warning": "2026-07-15T08:00:00Z",
+          "human_acceptance": null,
+          "power": "2026-07-15T08:12:00Z",
+          "route": "2026-07-15T08:20:00Z",
+          "service": "2026-07-15T08:12:00Z"
+        },
+        "facility": "UNCONFIRMED",
+        "heat_warning": "EXTREME",
+        "human_acceptance": "NOT_PROVIDED",
+        "late_event_ids": [
+          "EVT-S3-ROUTE-011"
+        ],
+        "power": "INTERRUPTED",
+        "rejected_external_claim_ids": [],
+        "route": "RESTRICTED",
+        "route_gap": false,
+        "service": "UNCONFIRMED"
+      },
+      "expected": {
+        "late_event_ids": [
+          "EVT-S3-ROUTE-011"
+        ],
+        "route": "RESTRICTED",
+        "route_gap": false
+      },
+      "id": "state-S3",
+      "pass": true
+    },
+    {
+      "actual": {
+        "capacity": "UNKNOWN",
+        "demand": "RISING",
+        "evidence_observed_at": {
+          "capacity": "2026-07-15T08:12:00Z",
+          "demand": "2026-07-15T08:30:00Z",
+          "facility": "2026-07-15T08:12:00Z",
+          "heat_warning": "2026-07-15T08:00:00Z",
+          "human_acceptance": null,
+          "power": "2026-07-15T08:12:00Z",
+          "route": "2026-07-15T08:20:00Z",
+          "service": "2026-07-15T08:12:00Z"
+        },
+        "facility": "UNCONFIRMED",
+        "heat_warning": "EXTREME",
+        "human_acceptance": "NOT_PROVIDED",
+        "late_event_ids": [
+          "EVT-S3-ROUTE-011"
+        ],
+        "power": "INTERRUPTED",
+        "rejected_external_claim_ids": [
+          "EVT-S4-DEMAND-001"
+        ],
+        "route": "RESTRICTED",
+        "route_gap": false,
+        "service": "UNCONFIRMED"
+      },
+      "expected": {
+        "capacity": "UNKNOWN",
+        "demand": "RISING",
+        "rejected_external_claim_ids": [
+          "EVT-S4-DEMAND-001"
+        ]
+      },
+      "id": "state-S4",
+      "pass": true
+    },
+    {
+      "actual": {
+        "capacity": "UNKNOWN",
+        "demand": "RISING",
+        "evidence_observed_at": {
+          "capacity": "2026-07-15T08:12:00Z",
+          "demand": "2026-07-15T08:30:00Z",
+          "facility": "2026-07-15T08:12:00Z",
+          "heat_warning": "2026-07-15T08:00:00Z",
+          "human_acceptance": null,
+          "power": "2026-07-15T09:00:00Z",
+          "route": "2026-07-15T08:20:00Z",
+          "service": "2026-07-15T08:12:00Z"
+        },
+        "facility": "UNCONFIRMED",
+        "heat_warning": "EXTREME",
+        "human_acceptance": "NOT_PROVIDED",
+        "late_event_ids": [
+          "EVT-S3-ROUTE-011"
+        ],
+        "power": "CONFIRMED_ON",
+        "rejected_external_claim_ids": [
+          "EVT-S4-DEMAND-001"
+        ],
+        "route": "RESTRICTED",
+        "route_gap": false,
+        "service": "UNCONFIRMED"
+      },
+      "expected": {
+        "capacity": "UNKNOWN",
+        "facility": "UNCONFIRMED",
+        "power": "CONFIRMED_ON",
+        "service": "UNCONFIRMED"
+      },
+      "id": "state-S5",
+      "pass": true
+    },
+    {
+      "actual": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "expected": "run stage inputs exactly match hashed fixture",
+      "id": "fixture-stage-inputs",
+      "pass": true
+    },
+    {
+      "actual": true,
+      "expected": "stage state and every Agent output match their audit records",
+      "id": "stage-agent-audit-output-consistency",
+      "pass": true
+    },
+    {
+      "actual": [
+        {
+          "anomalies": [],
+          "current_facts": {
+            "capacity": "UNKNOWN",
+            "demand": "BASELINE",
+            "evidence_observed_at": {
+              "capacity": "2026-07-15T08:00:40Z",
+              "demand": null,
+              "facility": "2026-07-15T08:00:20Z",
+              "heat_warning": "2026-07-15T08:00:00Z",
+              "human_acceptance": null,
+              "power": "2026-07-15T08:00:10Z",
+              "route": "2026-07-15T08:00:50Z",
+              "service": "2026-07-15T08:00:30Z"
+            },
+            "facility": "CONFIRMED_OPEN",
+            "heat_warning": "EXTREME",
+            "human_acceptance": "NOT_PROVIDED",
+            "late_event_ids": [],
+            "power": "CONFIRMED_ON",
+            "rejected_external_claim_ids": [],
+            "route": "OPEN",
+            "route_gap": false,
+            "service": "CONFIRMED_AVAILABLE"
+          },
+          "role": "Event Intelligence Agent",
+          "stage_id": "S1"
+        },
+        {
+          "anomalies": [],
+          "current_facts": {
+            "capacity": "UNKNOWN",
+            "demand": "BASELINE",
+            "evidence_observed_at": {
+              "capacity": "2026-07-15T08:12:00Z",
+              "demand": null,
+              "facility": "2026-07-15T08:12:00Z",
+              "heat_warning": "2026-07-15T08:00:00Z",
+              "human_acceptance": null,
+              "power": "2026-07-15T08:12:00Z",
+              "route": "2026-07-15T08:00:50Z",
+              "service": "2026-07-15T08:12:00Z"
+            },
+            "facility": "UNCONFIRMED",
+            "heat_warning": "EXTREME",
+            "human_acceptance": "NOT_PROVIDED",
+            "late_event_ids": [],
+            "power": "INTERRUPTED",
+            "rejected_external_claim_ids": [],
+            "route": "OPEN",
+            "route_gap": false,
+            "service": "UNCONFIRMED"
+          },
+          "role": "Event Intelligence Agent",
+          "stage_id": "S2"
+        },
+        {
+          "anomalies": [
+            {
+              "active_gap": true,
+              "event_id": "EVT-S3-ROUTE-012",
+              "late_arrival": false,
+              "status": "PENDING_GAP"
+            },
+            {
+              "active_gap": false,
+              "event_id": "EVT-S3-ROUTE-011",
+              "late_arrival": true,
+              "status": "ACCEPTED"
+            }
+          ],
+          "current_facts": {
+            "capacity": "UNKNOWN",
+            "demand": "BASELINE",
+            "evidence_observed_at": {
+              "capacity": "2026-07-15T08:12:00Z",
+              "demand": null,
+              "facility": "2026-07-15T08:12:00Z",
+              "heat_warning": "2026-07-15T08:00:00Z",
+              "human_acceptance": null,
+              "power": "2026-07-15T08:12:00Z",
+              "route": "2026-07-15T08:20:00Z",
+              "service": "2026-07-15T08:12:00Z"
+            },
+            "facility": "UNCONFIRMED",
+            "heat_warning": "EXTREME",
+            "human_acceptance": "NOT_PROVIDED",
+            "late_event_ids": [
+              "EVT-S3-ROUTE-011"
+            ],
+            "power": "INTERRUPTED",
+            "rejected_external_claim_ids": [],
+            "route": "RESTRICTED",
+            "route_gap": false,
+            "service": "UNCONFIRMED"
+          },
+          "role": "Event Intelligence Agent",
+          "stage_id": "S3"
+        },
+        {
+          "anomalies": [],
+          "current_facts": {
+            "capacity": "UNKNOWN",
+            "demand": "RISING",
+            "evidence_observed_at": {
+              "capacity": "2026-07-15T08:12:00Z",
+              "demand": "2026-07-15T08:30:00Z",
+              "facility": "2026-07-15T08:12:00Z",
+              "heat_warning": "2026-07-15T08:00:00Z",
+              "human_acceptance": null,
+              "power": "2026-07-15T08:12:00Z",
+              "route": "2026-07-15T08:20:00Z",
+              "service": "2026-07-15T08:12:00Z"
+            },
+            "facility": "UNCONFIRMED",
+            "heat_warning": "EXTREME",
+            "human_acceptance": "NOT_PROVIDED",
+            "late_event_ids": [
+              "EVT-S3-ROUTE-011"
+            ],
+            "power": "INTERRUPTED",
+            "rejected_external_claim_ids": [
+              "EVT-S4-DEMAND-001"
+            ],
+            "route": "RESTRICTED",
+            "route_gap": false,
+            "service": "UNCONFIRMED"
+          },
+          "role": "Event Intelligence Agent",
+          "stage_id": "S4"
+        },
+        {
+          "anomalies": [],
+          "current_facts": {
+            "capacity": "UNKNOWN",
+            "demand": "RISING",
+            "evidence_observed_at": {
+              "capacity": "2026-07-15T08:12:00Z",
+              "demand": "2026-07-15T08:30:00Z",
+              "facility": "2026-07-15T08:12:00Z",
+              "heat_warning": "2026-07-15T08:00:00Z",
+              "human_acceptance": null,
+              "power": "2026-07-15T09:00:00Z",
+              "route": "2026-07-15T08:20:00Z",
+              "service": "2026-07-15T08:12:00Z"
+            },
+            "facility": "UNCONFIRMED",
+            "heat_warning": "EXTREME",
+            "human_acceptance": "NOT_PROVIDED",
+            "late_event_ids": [
+              "EVT-S3-ROUTE-011"
+            ],
+            "power": "CONFIRMED_ON",
+            "rejected_external_claim_ids": [
+              "EVT-S4-DEMAND-001"
+            ],
+            "route": "RESTRICTED",
+            "route_gap": false,
+            "service": "UNCONFIRMED"
+          },
+          "role": "Event Intelligence Agent",
+          "stage_id": "S5"
+        }
+      ],
+      "expected": {
+        "S1": [],
+        "S2": [],
+        "S3": [
+          {
+            "active_gap": true,
+            "event_id": "EVT-S3-ROUTE-012",
+            "late_arrival": false,
+            "status": "PENDING_GAP"
+          },
+          {
+            "active_gap": false,
+            "event_id": "EVT-S3-ROUTE-011",
+            "late_arrival": true,
+            "status": "ACCEPTED"
+          }
+        ],
+        "S4": [],
+        "S5": []
+      },
+      "id": "event-agent-semantics",
+      "pass": true
+    },
+    {
+      "actual": true,
+      "expected": "every fixture event is bound by identity, source, time, payload and hashes",
+      "id": "audit-event-input-bindings",
+      "pass": true
+    },
+    {
+      "actual": [
+        {
+          "request_id": "ATT-S2-CLAIM-SERVICE",
+          "stage_id": "S2"
+        },
+        {
+          "request_id": "ATT-S3-PUBLISH-OPEN",
+          "stage_id": "S3"
+        },
+        {
+          "request_id": "ATT-S4-CLAIM-CAPACITY",
+          "stage_id": "S4"
+        },
+        {
+          "request_id": "ATT-S5-REOPEN",
+          "stage_id": "S5"
+        }
+      ],
+      "expected": [
+        {
+          "request_id": "ATT-S2-CLAIM-SERVICE",
+          "stage_id": "S2"
+        },
+        {
+          "request_id": "ATT-S3-PUBLISH-OPEN",
+          "stage_id": "S3"
+        },
+        {
+          "request_id": "ATT-S4-CLAIM-CAPACITY",
+          "stage_id": "S4"
+        },
+        {
+          "request_id": "ATT-S5-REOPEN",
+          "stage_id": "S5"
+        }
+      ],
+      "id": "action-decision-set",
+      "pass": true
+    },
+    {
+      "actual": {
+        "action": "CLAIM_SERVICE_AVAILABLE",
+        "evaluated_state": {
+          "capacity": "UNKNOWN",
+          "demand": "BASELINE",
+          "evidence_observed_at": {
+            "capacity": "2026-07-15T08:12:00Z",
+            "demand": null,
+            "facility": "2026-07-15T08:12:00Z",
+            "heat_warning": "2026-07-15T08:00:00Z",
+            "human_acceptance": null,
+            "power": "2026-07-15T08:12:00Z",
+            "route": "2026-07-15T08:00:50Z",
+            "service": "2026-07-15T08:12:00Z"
+          },
+          "facility": "UNCONFIRMED",
+          "heat_warning": "EXTREME",
+          "human_acceptance": "NOT_PROVIDED",
+          "late_event_ids": [],
+          "power": "INTERRUPTED",
+          "rejected_external_claim_ids": [],
+          "route": "OPEN",
+          "route_gap": false,
+          "service": "UNCONFIRMED"
+        },
+        "evaluated_state_sha256": "2e275966704ac98cb052de1c20e9710bbc96f17309affd2d359be0d2e29ed228",
+        "freshness_evaluation": null,
+        "real_world_effect": false,
+        "reason_codes": [
+          "POWER_NOT_CONFIRMED_ON",
+          "FACILITY_NOT_CONFIRMED_OPEN",
+          "SERVICE_NOT_CONFIRMED_AVAILABLE"
+        ],
+        "request_id": "ATT-S2-CLAIM-SERVICE",
+        "requested_at": "2026-07-15T08:12:30Z",
+        "requester": "SYNTHETIC_SERVICE_OPERATOR",
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "expected": {
+        "action": "CLAIM_SERVICE_AVAILABLE",
+        "expected_reason_codes": [
+          "POWER_NOT_CONFIRMED_ON",
+          "FACILITY_NOT_CONFIRMED_OPEN",
+          "SERVICE_NOT_CONFIRMED_AVAILABLE"
+        ],
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "id": "action-decision-ATT-S2-CLAIM-SERVICE",
+      "pass": true
+    },
+    {
+      "actual": {
+        "action": "PUBLISH_ROUTE_OPEN_DURING_GAP",
+        "evaluated_state": {
+          "capacity": "UNKNOWN",
+          "demand": "BASELINE",
+          "evidence_observed_at": {
+            "capacity": "2026-07-15T08:12:00Z",
+            "demand": null,
+            "facility": "2026-07-15T08:12:00Z",
+            "heat_warning": "2026-07-15T08:00:00Z",
+            "human_acceptance": null,
+            "power": "2026-07-15T08:12:00Z",
+            "route": "2026-07-15T08:20:00Z",
+            "service": "2026-07-15T08:12:00Z"
+          },
+          "facility": "UNCONFIRMED",
+          "heat_warning": "EXTREME",
+          "human_acceptance": "NOT_PROVIDED",
+          "late_event_ids": [],
+          "power": "INTERRUPTED",
+          "rejected_external_claim_ids": [],
+          "route": "UNKNOWN",
+          "route_gap": true,
+          "service": "UNCONFIRMED"
+        },
+        "evaluated_state_sha256": "6272953fdea707f8c3a22df31af7dd3f8d616b2e22ef179d214fc216a0aa3951",
+        "freshness_evaluation": null,
+        "real_world_effect": false,
+        "reason_codes": [
+          "ROUTE_SEQUENCE_GAP_ACTIVE",
+          "ROUTE_NOT_CONFIRMED_OPEN"
+        ],
+        "request_id": "ATT-S3-PUBLISH-OPEN",
+        "requested_at": "2026-07-15T08:20:30Z",
+        "requester": "SYNTHETIC_ROUTE_OPERATOR",
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "expected": {
+        "action": "PUBLISH_ROUTE_OPEN_DURING_GAP",
+        "expected_reason_codes": [
+          "ROUTE_SEQUENCE_GAP_ACTIVE",
+          "ROUTE_NOT_CONFIRMED_OPEN"
+        ],
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "id": "action-decision-ATT-S3-PUBLISH-OPEN",
+      "pass": true
+    },
+    {
+      "actual": {
+        "action": "CLAIM_CAPACITY_AVAILABLE",
+        "evaluated_state": {
+          "capacity": "UNKNOWN",
+          "demand": "RISING",
+          "evidence_observed_at": {
+            "capacity": "2026-07-15T08:12:00Z",
+            "demand": "2026-07-15T08:30:00Z",
+            "facility": "2026-07-15T08:12:00Z",
+            "heat_warning": "2026-07-15T08:00:00Z",
+            "human_acceptance": null,
+            "power": "2026-07-15T08:12:00Z",
+            "route": "2026-07-15T08:20:00Z",
+            "service": "2026-07-15T08:12:00Z"
+          },
+          "facility": "UNCONFIRMED",
+          "heat_warning": "EXTREME",
+          "human_acceptance": "NOT_PROVIDED",
+          "late_event_ids": [
+            "EVT-S3-ROUTE-011"
+          ],
+          "power": "INTERRUPTED",
+          "rejected_external_claim_ids": [
+            "EVT-S4-DEMAND-001"
+          ],
+          "route": "RESTRICTED",
+          "route_gap": false,
+          "service": "UNCONFIRMED"
+        },
+        "evaluated_state_sha256": "add047c88c16e05b55c52129765940f3d2dafb5d6642d7dddd9624009925195f",
+        "freshness_evaluation": null,
+        "real_world_effect": false,
+        "reason_codes": [
+          "CAPACITY_NOT_CONFIRMED_SUFFICIENT",
+          "SUPPORTING_SOURCE_REJECTED"
+        ],
+        "request_id": "ATT-S4-CLAIM-CAPACITY",
+        "requested_at": "2026-07-15T08:30:30Z",
+        "requester": "SYNTHETIC_CAPACITY_OPERATOR",
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "expected": {
+        "action": "CLAIM_CAPACITY_AVAILABLE",
+        "expected_reason_codes": [
+          "CAPACITY_NOT_CONFIRMED_SUFFICIENT",
+          "SUPPORTING_SOURCE_REJECTED"
+        ],
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "id": "action-decision-ATT-S4-CLAIM-CAPACITY",
+      "pass": true
+    },
+    {
+      "actual": {
+        "action": "REOPEN_SERVICE",
+        "evaluated_state": {
+          "capacity": "UNKNOWN",
+          "demand": "RISING",
+          "evidence_observed_at": {
+            "capacity": "2026-07-15T08:12:00Z",
+            "demand": "2026-07-15T08:30:00Z",
+            "facility": "2026-07-15T08:12:00Z",
+            "heat_warning": "2026-07-15T08:00:00Z",
+            "human_acceptance": null,
+            "power": "2026-07-15T09:00:00Z",
+            "route": "2026-07-15T08:20:00Z",
+            "service": "2026-07-15T08:12:00Z"
+          },
+          "facility": "UNCONFIRMED",
+          "heat_warning": "EXTREME",
+          "human_acceptance": "NOT_PROVIDED",
+          "late_event_ids": [
+            "EVT-S3-ROUTE-011"
+          ],
+          "power": "CONFIRMED_ON",
+          "rejected_external_claim_ids": [
+            "EVT-S4-DEMAND-001"
+          ],
+          "route": "RESTRICTED",
+          "route_gap": false,
+          "service": "UNCONFIRMED"
+        },
+        "evaluated_state_sha256": "37e50a978c8171ddd15a2d19bb410f7e7e65d3d2347dce7d99ffae30ab63055b",
+        "freshness_evaluation": {
+          "checks": [
+            {
+              "age_seconds": 2910,
+              "field": "facility",
+              "fresh": false,
+              "observed_at": "2026-07-15T08:12:00Z"
+            },
+            {
+              "age_seconds": 2910,
+              "field": "service",
+              "fresh": false,
+              "observed_at": "2026-07-15T08:12:00Z"
+            },
+            {
+              "age_seconds": 2910,
+              "field": "capacity",
+              "fresh": false,
+              "observed_at": "2026-07-15T08:12:00Z"
+            },
+            {
+              "age_seconds": 1830,
+              "field": "demand",
+              "fresh": false,
+              "observed_at": "2026-07-15T08:30:00Z"
+            },
+            {
+              "age_seconds": null,
+              "field": "human_acceptance",
+              "fresh": false,
+              "observed_at": null
+            }
+          ],
+          "max_age_seconds": 300,
+          "threshold_status": "PROPOSED_NOT_VALIDATED"
+        },
+        "real_world_effect": false,
+        "reason_codes": [
+          "FACILITY_NOT_CONFIRMED_OPEN",
+          "SERVICE_NOT_CONFIRMED_AVAILABLE",
+          "CAPACITY_NOT_CONFIRMED_SUFFICIENT",
+          "HUMAN_ACCEPTANCE_NOT_RECORDED",
+          "FACILITY_EVIDENCE_NOT_FRESH",
+          "SERVICE_EVIDENCE_NOT_FRESH",
+          "CAPACITY_EVIDENCE_NOT_FRESH",
+          "DEMAND_EVIDENCE_NOT_FRESH",
+          "HUMAN_ACCEPTANCE_EVIDENCE_NOT_FRESH"
+        ],
+        "request_id": "ATT-S5-REOPEN",
+        "requested_at": "2026-07-15T09:00:30Z",
+        "requester": "SYNTHETIC_SERVICE_OPERATOR",
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "expected": {
+        "action": "REOPEN_SERVICE",
+        "expected_reason_codes": [
+          "FACILITY_NOT_CONFIRMED_OPEN",
+          "SERVICE_NOT_CONFIRMED_AVAILABLE",
+          "CAPACITY_NOT_CONFIRMED_SUFFICIENT",
+          "HUMAN_ACCEPTANCE_NOT_RECORDED",
+          "FACILITY_EVIDENCE_NOT_FRESH",
+          "SERVICE_EVIDENCE_NOT_FRESH",
+          "CAPACITY_EVIDENCE_NOT_FRESH",
+          "DEMAND_EVIDENCE_NOT_FRESH",
+          "HUMAN_ACCEPTANCE_EVIDENCE_NOT_FRESH"
+        ],
+        "expected_stale_fields": [
+          "facility",
+          "service",
+          "capacity",
+          "demand",
+          "human_acceptance"
+        ],
+        "status": "BLOCKED_FAIL_CLOSED"
+      },
+      "id": "action-decision-ATT-S5-REOPEN",
+      "pass": true
+    },
+    {
+      "actual": [
+        "SIM-S1-652c2a9195cd288344c6",
+        "SIM-S2-c6ea80049f2497d5211d",
+        "SIM-S3-a84349a47d2bb74a369e",
+        "SIM-S4-b8e1ad4771e91b076895",
+        "SIM-S5-8aa1db0397484707168e"
+      ],
+      "expected": "unique, scoped, unexpired and consumed once for simulation only",
+      "id": "fencing-token-consumption",
+      "pass": true
+    },
+    {
+      "actual": [
+        {
+          "citations": [
+            {
+              "actual_sha256": "5b1fd496c98c2364f0cf20686c850a6bd1cb2bec30044bb850c7224082cd97f2",
+              "applicability": "Use as a privacy and data-governance constraint; not as operational authority for public-service decisions.",
+              "claim_id": "CLM-UAE-001",
+              "locator": "Personal Data Protection Law section",
+              "official_url": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+              "paraphrase": "The UAE personal-data framework governs data management and protection, including confidentiality, privacy and duties of parties processing personal data.",
+              "source_id": "SRC-UAE-001",
+              "source_title": "Data protection laws",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Strategic design principle; it does not authorize a simulated Agent to reopen or operate a real service.",
+              "claim_id": "CLM-UAE-002",
+              "locator": "Dimensions section",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The UAE Digital Government Strategy includes resilience and proactive crisis capability among its eight dimensions.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Supports traceable evidence handling and does not establish legal sufficiency of this prototype.",
+              "claim_id": "CLM-UAE-003",
+              "locator": "Data-driven dimension",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The strategy's data-driven dimension treats data as a strategic asset and calls for rules and ethical principles for trustworthy and safe reuse.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "a733f219225a3862278fec3246598ad093d31b7cc014598faf66cdf151c8cc6e",
+              "applicability": "Supports national AI alignment and public-service relevance; it does not validate this scenario or authorize operations.",
+              "claim_id": "CLM-UAE-005",
+              "locator": "Strategy aims and sectors",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Ai/uae-strategy-for-artificial-intelligence",
+              "paraphrase": "The UAE AI strategy links AI adoption to stronger government performance, integrated digital systems and future services across multiple sectors.",
+              "source_id": "SRC-UAE-003",
+              "source_title": "UAE Strategy for Artificial Intelligence",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "c5604dc6e9261146cb943490f4d234ecf4b24313724c9e65ef44752898aa2748",
+              "applicability": "Supports the prototype's staged workflow, risk controls and human escalation; it is guidance rather than deployment approval.",
+              "claim_id": "CLM-UAE-006",
+              "locator": "PDF contents and sections on pages 10-13, 58-95",
+              "official_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+              "paraphrase": "The UAE government-services AI adoption guideline calls for a national framework, entity-level operating model, staged use-case development and explicit AI risk management.",
+              "source_id": "SRC-UAE-006",
+              "source_title": "AI Adoption Guideline in Government Services",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+              "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+              "claim_id": "CLM-UAE-007",
+              "locator": "Portal summary and role/lifecycle sections",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+              "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+              "source_id": "SRC-UAE-007",
+              "source_title": "Cyber Incident Response Plan",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "21d404a2d57fcfb321bbb7c41739952e8c9390510b3c562891afb6da2918d390",
+              "applicability": "Supports role-boundary and escalation controls while preserving the fictional coordinator label.",
+              "claim_id": "CLM-UAE-008",
+              "locator": "Federal and emirate responsibility sections",
+              "official_url": "https://u.ae/en/about-the-uae/digital-uae/digital-transformation/cooperation-and-collaboration/overseeing-digital-transformation-in-the-uae",
+              "paraphrase": "Federal and emirate-level digital transformation responsibilities are assigned to different named entities, so a simulated coordinator must not imply authority held by those bodies.",
+              "source_id": "SRC-UAE-008",
+              "source_title": "Overseeing digital transformation in the UAE",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            }
+          ],
+          "external_claims": [],
+          "policy_position": "SCOPED_GUIDANCE_AVAILABLE",
+          "role": "Policy Adviser Agent",
+          "stage_id": "S1"
+        },
+        {
+          "citations": [
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Strategic design principle; it does not authorize a simulated Agent to reopen or operate a real service.",
+              "claim_id": "CLM-UAE-002",
+              "locator": "Dimensions section",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The UAE Digital Government Strategy includes resilience and proactive crisis capability among its eight dimensions.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Supports traceable evidence handling and does not establish legal sufficiency of this prototype.",
+              "claim_id": "CLM-UAE-003",
+              "locator": "Data-driven dimension",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The strategy's data-driven dimension treats data as a strategic asset and calls for rules and ethical principles for trustworthy and safe reuse.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1f6c8dd3e3ad41eedd59af32817202d0e72c3967918a942695981984ead835d9",
+              "applicability": "Governs prototype behavior and escalation; it is not a delegation of UAE institutional authority.",
+              "claim_id": "CLM-UAE-004",
+              "locator": "Charter principles",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+              "paraphrase": "The UAE AI Charter emphasizes responsible use, privacy and data security, transparency, human oversight, governance and accountability.",
+              "source_id": "SRC-UAE-004",
+              "source_title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "a733f219225a3862278fec3246598ad093d31b7cc014598faf66cdf151c8cc6e",
+              "applicability": "Supports national AI alignment and public-service relevance; it does not validate this scenario or authorize operations.",
+              "claim_id": "CLM-UAE-005",
+              "locator": "Strategy aims and sectors",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Ai/uae-strategy-for-artificial-intelligence",
+              "paraphrase": "The UAE AI strategy links AI adoption to stronger government performance, integrated digital systems and future services across multiple sectors.",
+              "source_id": "SRC-UAE-003",
+              "source_title": "UAE Strategy for Artificial Intelligence",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "c5604dc6e9261146cb943490f4d234ecf4b24313724c9e65ef44752898aa2748",
+              "applicability": "Supports the prototype's staged workflow, risk controls and human escalation; it is guidance rather than deployment approval.",
+              "claim_id": "CLM-UAE-006",
+              "locator": "PDF contents and sections on pages 10-13, 58-95",
+              "official_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+              "paraphrase": "The UAE government-services AI adoption guideline calls for a national framework, entity-level operating model, staged use-case development and explicit AI risk management.",
+              "source_id": "SRC-UAE-006",
+              "source_title": "AI Adoption Guideline in Government Services",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+              "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+              "claim_id": "CLM-UAE-007",
+              "locator": "Portal summary and role/lifecycle sections",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+              "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+              "source_id": "SRC-UAE-007",
+              "source_title": "Cyber Incident Response Plan",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "21d404a2d57fcfb321bbb7c41739952e8c9390510b3c562891afb6da2918d390",
+              "applicability": "Supports role-boundary and escalation controls while preserving the fictional coordinator label.",
+              "claim_id": "CLM-UAE-008",
+              "locator": "Federal and emirate responsibility sections",
+              "official_url": "https://u.ae/en/about-the-uae/digital-uae/digital-transformation/cooperation-and-collaboration/overseeing-digital-transformation-in-the-uae",
+              "paraphrase": "Federal and emirate-level digital transformation responsibilities are assigned to different named entities, so a simulated coordinator must not imply authority held by those bodies.",
+              "source_id": "SRC-UAE-008",
+              "source_title": "Overseeing digital transformation in the UAE",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            }
+          ],
+          "external_claims": [],
+          "policy_position": "SCOPED_GUIDANCE_AVAILABLE",
+          "role": "Policy Adviser Agent",
+          "stage_id": "S2"
+        },
+        {
+          "citations": [
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Strategic design principle; it does not authorize a simulated Agent to reopen or operate a real service.",
+              "claim_id": "CLM-UAE-002",
+              "locator": "Dimensions section",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The UAE Digital Government Strategy includes resilience and proactive crisis capability among its eight dimensions.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Supports traceable evidence handling and does not establish legal sufficiency of this prototype.",
+              "claim_id": "CLM-UAE-003",
+              "locator": "Data-driven dimension",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The strategy's data-driven dimension treats data as a strategic asset and calls for rules and ethical principles for trustworthy and safe reuse.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1f6c8dd3e3ad41eedd59af32817202d0e72c3967918a942695981984ead835d9",
+              "applicability": "Governs prototype behavior and escalation; it is not a delegation of UAE institutional authority.",
+              "claim_id": "CLM-UAE-004",
+              "locator": "Charter principles",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+              "paraphrase": "The UAE AI Charter emphasizes responsible use, privacy and data security, transparency, human oversight, governance and accountability.",
+              "source_id": "SRC-UAE-004",
+              "source_title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+              "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+              "claim_id": "CLM-UAE-007",
+              "locator": "Portal summary and role/lifecycle sections",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+              "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+              "source_id": "SRC-UAE-007",
+              "source_title": "Cyber Incident Response Plan",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            }
+          ],
+          "external_claims": [],
+          "policy_position": "SCOPED_GUIDANCE_AVAILABLE",
+          "role": "Policy Adviser Agent",
+          "stage_id": "S3"
+        },
+        {
+          "citations": [
+            {
+              "actual_sha256": "5b1fd496c98c2364f0cf20686c850a6bd1cb2bec30044bb850c7224082cd97f2",
+              "applicability": "Use as a privacy and data-governance constraint; not as operational authority for public-service decisions.",
+              "claim_id": "CLM-UAE-001",
+              "locator": "Personal Data Protection Law section",
+              "official_url": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+              "paraphrase": "The UAE personal-data framework governs data management and protection, including confidentiality, privacy and duties of parties processing personal data.",
+              "source_id": "SRC-UAE-001",
+              "source_title": "Data protection laws",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Supports traceable evidence handling and does not establish legal sufficiency of this prototype.",
+              "claim_id": "CLM-UAE-003",
+              "locator": "Data-driven dimension",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The strategy's data-driven dimension treats data as a strategic asset and calls for rules and ethical principles for trustworthy and safe reuse.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1f6c8dd3e3ad41eedd59af32817202d0e72c3967918a942695981984ead835d9",
+              "applicability": "Governs prototype behavior and escalation; it is not a delegation of UAE institutional authority.",
+              "claim_id": "CLM-UAE-004",
+              "locator": "Charter principles",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+              "paraphrase": "The UAE AI Charter emphasizes responsible use, privacy and data security, transparency, human oversight, governance and accountability.",
+              "source_id": "SRC-UAE-004",
+              "source_title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "c5604dc6e9261146cb943490f4d234ecf4b24313724c9e65ef44752898aa2748",
+              "applicability": "Supports the prototype's staged workflow, risk controls and human escalation; it is guidance rather than deployment approval.",
+              "claim_id": "CLM-UAE-006",
+              "locator": "PDF contents and sections on pages 10-13, 58-95",
+              "official_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+              "paraphrase": "The UAE government-services AI adoption guideline calls for a national framework, entity-level operating model, staged use-case development and explicit AI risk management.",
+              "source_id": "SRC-UAE-006",
+              "source_title": "AI Adoption Guideline in Government Services",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+              "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+              "claim_id": "CLM-UAE-007",
+              "locator": "Portal summary and role/lifecycle sections",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+              "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+              "source_id": "SRC-UAE-007",
+              "source_title": "Cyber Incident Response Plan",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "21d404a2d57fcfb321bbb7c41739952e8c9390510b3c562891afb6da2918d390",
+              "applicability": "Supports role-boundary and escalation controls while preserving the fictional coordinator label.",
+              "claim_id": "CLM-UAE-008",
+              "locator": "Federal and emirate responsibility sections",
+              "official_url": "https://u.ae/en/about-the-uae/digital-uae/digital-transformation/cooperation-and-collaboration/overseeing-digital-transformation-in-the-uae",
+              "paraphrase": "Federal and emirate-level digital transformation responsibilities are assigned to different named entities, so a simulated coordinator must not imply authority held by those bodies.",
+              "source_id": "SRC-UAE-008",
+              "source_title": "Overseeing digital transformation in the UAE",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            }
+          ],
+          "external_claims": [
+            {
+              "disposition": "REJECTED_SOURCE_NOT_ADMITTED",
+              "event_id": "EVT-S4-DEMAND-001",
+              "source_id": "UNKNOWN-SOURCE-001"
+            }
+          ],
+          "policy_position": "SCOPED_GUIDANCE_AVAILABLE",
+          "role": "Policy Adviser Agent",
+          "stage_id": "S4"
+        },
+        {
+          "citations": [
+            {
+              "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+              "applicability": "Strategic design principle; it does not authorize a simulated Agent to reopen or operate a real service.",
+              "claim_id": "CLM-UAE-002",
+              "locator": "Dimensions section",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+              "paraphrase": "The UAE Digital Government Strategy includes resilience and proactive crisis capability among its eight dimensions.",
+              "source_id": "SRC-UAE-002",
+              "source_title": "The UAE Digital Government Strategy 2025",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "1f6c8dd3e3ad41eedd59af32817202d0e72c3967918a942695981984ead835d9",
+              "applicability": "Governs prototype behavior and escalation; it is not a delegation of UAE institutional authority.",
+              "claim_id": "CLM-UAE-004",
+              "locator": "Charter principles",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+              "paraphrase": "The UAE AI Charter emphasizes responsible use, privacy and data security, transparency, human oversight, governance and accountability.",
+              "source_id": "SRC-UAE-004",
+              "source_title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "c5604dc6e9261146cb943490f4d234ecf4b24313724c9e65ef44752898aa2748",
+              "applicability": "Supports the prototype's staged workflow, risk controls and human escalation; it is guidance rather than deployment approval.",
+              "claim_id": "CLM-UAE-006",
+              "locator": "PDF contents and sections on pages 10-13, 58-95",
+              "official_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+              "paraphrase": "The UAE government-services AI adoption guideline calls for a national framework, entity-level operating model, staged use-case development and explicit AI risk management.",
+              "source_id": "SRC-UAE-006",
+              "source_title": "AI Adoption Guideline in Government Services",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+              "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+              "claim_id": "CLM-UAE-007",
+              "locator": "Portal summary and role/lifecycle sections",
+              "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+              "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+              "source_id": "SRC-UAE-007",
+              "source_title": "Cyber Incident Response Plan",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            },
+            {
+              "actual_sha256": "21d404a2d57fcfb321bbb7c41739952e8c9390510b3c562891afb6da2918d390",
+              "applicability": "Supports role-boundary and escalation controls while preserving the fictional coordinator label.",
+              "claim_id": "CLM-UAE-008",
+              "locator": "Federal and emirate responsibility sections",
+              "official_url": "https://u.ae/en/about-the-uae/digital-uae/digital-transformation/cooperation-and-collaboration/overseeing-digital-transformation-in-the-uae",
+              "paraphrase": "Federal and emirate-level digital transformation responsibilities are assigned to different named entities, so a simulated coordinator must not imply authority held by those bodies.",
+              "source_id": "SRC-UAE-008",
+              "source_title": "Overseeing digital transformation in the UAE",
+              "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+            }
+          ],
+          "external_claims": [],
+          "policy_position": "SCOPED_GUIDANCE_AVAILABLE",
+          "role": "Policy Adviser Agent",
+          "stage_id": "S5"
+        }
+      ],
+      "expected": "policy outputs exactly match admitted metadata; raw source bytes were not included or verified",
+      "id": "policy-agent-semantics",
+      "pass": true
+    },
+    {
+      "actual": [
+        {
+          "authority": "NO_REAL_INSTITUTIONAL_AUTHORITY",
+          "proposal": "PUBLISH_SYNTHETIC_HEAT_ADVISORY",
+          "rationale": "Publish only the synthetic warning and recorded baseline.",
+          "role": "Simulated Public Service Coordinator",
+          "stage_id": "S1"
+        },
+        {
+          "authority": "NO_REAL_INSTITUTIONAL_AUTHORITY",
+          "proposal": "HOLD_SERVICE_AVAILABILITY_CLAIM",
+          "rationale": "Power interruption leaves service and capacity unconfirmed.",
+          "role": "Simulated Public Service Coordinator",
+          "stage_id": "S2"
+        },
+        {
+          "authority": "NO_REAL_INSTITUTIONAL_AUTHORITY",
+          "proposal": "UPDATE_SIMULATED_ROUTE_STATUS",
+          "rationale": "Use the highest contiguous route sequence and preserve the late event.",
+          "role": "Simulated Public Service Coordinator",
+          "stage_id": "S3"
+        },
+        {
+          "authority": "NO_REAL_INSTITUTIONAL_AUTHORITY",
+          "proposal": "REQUEST_CAPACITY_CONFIRMATION",
+          "rationale": "Rising demand and unknown capacity require evidence, not an availability claim.",
+          "role": "Simulated Public Service Coordinator",
+          "stage_id": "S4"
+        },
+        {
+          "authority": "NO_REAL_INSTITUTIONAL_AUTHORITY",
+          "proposal": "HOLD_SERVICE_REOPENING",
+          "rationale": "Power is CONFIRMED_ON, but service and capacity remain unconfirmed.",
+          "role": "Simulated Public Service Coordinator",
+          "stage_id": "S5"
+        }
+      ],
+      "expected": {
+        "S1": {
+          "proposal": "PUBLISH_SYNTHETIC_HEAT_ADVISORY",
+          "rationale": "Publish only the synthetic warning and recorded baseline."
+        },
+        "S2": {
+          "proposal": "HOLD_SERVICE_AVAILABILITY_CLAIM",
+          "rationale": "Power interruption leaves service and capacity unconfirmed."
+        },
+        "S3": {
+          "proposal": "UPDATE_SIMULATED_ROUTE_STATUS",
+          "rationale": "Use the highest contiguous route sequence and preserve the late event."
+        },
+        "S4": {
+          "proposal": "REQUEST_CAPACITY_CONFIRMATION",
+          "rationale": "Rising demand and unknown capacity require evidence, not an availability claim."
+        },
+        "S5": {
+          "proposal": "HOLD_SERVICE_REOPENING",
+          "rationale": "Power is CONFIRMED_ON, but service and capacity remain unconfirmed."
+        }
+      },
+      "id": "coordinator-agent-semantics",
+      "pass": true
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "unknown-source-rejected",
+      "pass": true
+    },
+    {
+      "actual": [],
+      "expected": [],
+      "id": "forbidden-outcomes",
+      "pass": true
+    }
+  ],
+  "independent_human_acceptance": false,
+  "knowledge_base_verification": {
+    "admitted_source_records": 7,
+    "mode": "METADATA_ONLY_PUBLIC_BUNDLE",
+    "raw_source_bytes_verified": false,
+    "source_metadata_records_checked": 12,
+    "status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+  },
+  "oracle": {
+    "logical_path": "verifier/oracles/s1-s5.oracle.json",
+    "sha256": "c918d1d6c9f557f24e1452f36623ca8eea65f63a91f15b2bfe05c57a0ab0c685"
+  },
+  "review_boundary": "MACHINE_CHECK_NOT_THIRD_PARTY_HUMAN_CERTIFICATION",
+  "run_id": "uae-s1-s5-reference-001",
+  "schema_version": "1.1",
+  "status": "PASS",
+  "summary": {
+    "failed": 0,
+    "passed": 25,
+    "total": 25
+  },
+  "verified_inputs": {
+    "claims_sha256": "0a116ef863458d999a6b309a360ccefded657cf059a71b6e72cd381b5e66303a",
+    "fixture_sha256": "d5e2c7d0e244aa360a13973acd7cff02a60de21ddbf72aeae0bd9a12554bb9c5",
+    "sources_sha256": "0e98e732acaea046858ffd7f937945512bceeeae9d67e214ca6d9019cdb3ac9e"
+  },
+  "verifier": "LOCAL_DETERMINISTIC_VERIFIER_SEPARATE_CLI"
+}

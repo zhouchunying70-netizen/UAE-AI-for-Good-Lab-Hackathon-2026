@@ -1,0 +1,115 @@
+{
+  "actual": {
+    "audit_record_count": 30,
+    "owner_approval": "NOT_GRANTED",
+    "policy_citation_counts": [
+      7,
+      7,
+      7
+    ],
+    "provider_calls": 0,
+    "real_world_actions": 0,
+    "scenario_status": "TECHNICAL_TEST_SCENARIO",
+    "stage_ids": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "t2_decision": "BLOCKED_FAIL_CLOSED",
+    "t3_decision": "BLOCKED_FAIL_CLOSED",
+    "t3_rejected_claim": "EVT-T3-DEMAND-002"
+  },
+  "assertions": [
+    {
+      "actual": {
+        "owner_approval": "NOT_GRANTED",
+        "scenario_status": "TECHNICAL_TEST_SCENARIO"
+      },
+      "expected": {
+        "owner_approval": "NOT_GRANTED",
+        "scenario_status": "TECHNICAL_TEST_SCENARIO"
+      },
+      "id": "technical-scenario-label",
+      "pass": true
+    },
+    {
+      "actual": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "expected": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "id": "three-stage-release",
+      "pass": true
+    },
+    {
+      "actual": "BLOCKED_FAIL_CLOSED",
+      "expected": "BLOCKED_FAIL_CLOSED",
+      "id": "t2-fail-closed",
+      "pass": true
+    },
+    {
+      "actual": "BLOCKED_FAIL_CLOSED",
+      "expected": "BLOCKED_FAIL_CLOSED",
+      "id": "t3-fail-closed",
+      "pass": true
+    },
+    {
+      "actual": "EVT-T3-DEMAND-002",
+      "expected": "EVT-T3-DEMAND-002",
+      "id": "unknown-claim-rejected",
+      "pass": true
+    },
+    {
+      "actual": {
+        "provider_calls": 0,
+        "real_world_actions": 0
+      },
+      "expected": {
+        "provider_calls": 0,
+        "real_world_actions": 0
+      },
+      "id": "synthetic-only",
+      "pass": true
+    },
+    {
+      "actual": [
+        7,
+        7,
+        7
+      ],
+      "expected": "all stages cited",
+      "id": "policy-citations-present",
+      "pass": true
+    },
+    {
+      "actual": 30,
+      "expected": true,
+      "id": "audit-records-present",
+      "pass": true
+    }
+  ],
+  "expected": {
+    "owner_approval": "NOT_GRANTED",
+    "provider_calls": 0,
+    "real_world_actions": 0,
+    "scenario_status": "TECHNICAL_TEST_SCENARIO",
+    "stage_ids": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "t2_decision": "BLOCKED_FAIL_CLOSED",
+    "t3_decision": "BLOCKED_FAIL_CLOSED",
+    "t3_rejected_claim": "EVT-T3-DEMAND-002"
+  },
+  "generated_at": "2026-11-10T07:50:33.726Z",
+  "limitation": "This verifier checks the technical fixture and generated artifacts locally. It is not Owner approval, institutional validation or third-party certification.",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "verification_type": "LOCAL_TECHNICAL_SCENARIO_ASSERTION_CHECK"
+}

@@ -1,0 +1,137 @@
+{
+  "agent": "Policy Adviser Agent",
+  "boundaries": [
+    "This is not legal advice.",
+    "This role does not claim UAE institutional authority.",
+    "No hidden chain-of-thought is emitted; only cited claims, scoped reasons and explicit gaps are recorded."
+  ],
+  "execution_mode": "DETERMINISTIC_EXACT_METADATA_TAG_OVERLAP",
+  "implementation_status": "IMPLEMENTED_AND_VERIFIED_IN_LOCAL_DETERMINISTIC_RUN",
+  "input": {
+    "question": "What privacy, oversight and resilience controls should a synthetic public-service continuity prototype use during an extreme-heat event, and does the admitted UAE source set establish authority to reopen the service after power returns?"
+  },
+  "output": {
+    "answer": "The admitted records provide scoped governance guidance that supports evidence preservation, privacy, human oversight, accountability and resilience controls. They do not establish legal authority for this synthetic coordinator or authorize a real service action.",
+    "decision_status": "ADVISORY_ONLY",
+    "evidence_sufficiency": "SUFFICIENT_FOR_SCOPED_GUIDANCE_ONLY",
+    "human_review_status": "REQUIRED_NOT_PERFORMED",
+    "legal_conclusion": false,
+    "policy_gaps": [
+      "The admitted source set is limited and does not constitute a complete UAE legal or operational corpus.",
+      "Metadata-only mode does not reverify excluded source bytes at runtime.",
+      "No admitted source establishes a heat/public-cooling operating mandate or authority to reopen a real service."
+    ],
+    "real_world_authority": false
+  },
+  "question_id": "POLICY-QUERY-RESCUE-001",
+  "retrieval": {
+    "citation_count": 8,
+    "citations": [
+      {
+        "actual_sha256": "5b1fd496c98c2364f0cf20686c850a6bd1cb2bec30044bb850c7224082cd97f2",
+        "applicability": "Use as a privacy and data-governance constraint; not as operational authority for public-service decisions.",
+        "claim_id": "CLM-UAE-001",
+        "locator": "Personal Data Protection Law section",
+        "official_url": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+        "paraphrase": "The UAE personal-data framework governs data management and protection, including confidentiality, privacy and duties of parties processing personal data.",
+        "source_id": "SRC-UAE-001",
+        "source_title": "Data protection laws",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+        "applicability": "Strategic design principle; it does not authorize a simulated Agent to reopen or operate a real service.",
+        "claim_id": "CLM-UAE-002",
+        "locator": "Dimensions section",
+        "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+        "paraphrase": "The UAE Digital Government Strategy includes resilience and proactive crisis capability among its eight dimensions.",
+        "source_id": "SRC-UAE-002",
+        "source_title": "The UAE Digital Government Strategy 2025",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "1d9f189c9f0c3ce5ea12f39b3d39d010838662cbe13dd57caaf7cb4f4f7d3b17",
+        "applicability": "Supports traceable evidence handling and does not establish legal sufficiency of this prototype.",
+        "claim_id": "CLM-UAE-003",
+        "locator": "Data-driven dimension",
+        "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/government-services-and-digital-transformation/uae-national-digital-government-strategy",
+        "paraphrase": "The strategy's data-driven dimension treats data as a strategic asset and calls for rules and ethical principles for trustworthy and safe reuse.",
+        "source_id": "SRC-UAE-002",
+        "source_title": "The UAE Digital Government Strategy 2025",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "1f6c8dd3e3ad41eedd59af32817202d0e72c3967918a942695981984ead835d9",
+        "applicability": "Governs prototype behavior and escalation; it is not a delegation of UAE institutional authority.",
+        "claim_id": "CLM-UAE-004",
+        "locator": "Charter principles",
+        "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+        "paraphrase": "The UAE AI Charter emphasizes responsible use, privacy and data security, transparency, human oversight, governance and accountability.",
+        "source_id": "SRC-UAE-004",
+        "source_title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "a733f219225a3862278fec3246598ad093d31b7cc014598faf66cdf151c8cc6e",
+        "applicability": "Supports national AI alignment and public-service relevance; it does not validate this scenario or authorize operations.",
+        "claim_id": "CLM-UAE-005",
+        "locator": "Strategy aims and sectors",
+        "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Ai/uae-strategy-for-artificial-intelligence",
+        "paraphrase": "The UAE AI strategy links AI adoption to stronger government performance, integrated digital systems and future services across multiple sectors.",
+        "source_id": "SRC-UAE-003",
+        "source_title": "UAE Strategy for Artificial Intelligence",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "c5604dc6e9261146cb943490f4d234ecf4b24313724c9e65ef44752898aa2748",
+        "applicability": "Supports the prototype's staged workflow, risk controls and human escalation; it is guidance rather than deployment approval.",
+        "claim_id": "CLM-UAE-006",
+        "locator": "PDF contents and sections on pages 10-13, 58-95",
+        "official_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+        "paraphrase": "The UAE government-services AI adoption guideline calls for a national framework, entity-level operating model, staged use-case development and explicit AI risk management.",
+        "source_id": "SRC-UAE-006",
+        "source_title": "AI Adoption Guideline in Government Services",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "86b8df905ae048d6c4f7477e9e8383a5dd4c945ced29a6313c1499284c946bbc",
+        "applicability": "Supports explicit roles, event evidence and recovery checks; it does not make the synthetic heat scenario a cyber incident.",
+        "claim_id": "CLM-UAE-007",
+        "locator": "Portal summary and role/lifecycle sections",
+        "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Cypersecurity/Cyber-Incident-Response-Plan",
+        "paraphrase": "The national cyber-incident approach defines cross-sector roles, coordination, reporting, recovery and continuous learning across an incident lifecycle.",
+        "source_id": "SRC-UAE-007",
+        "source_title": "Cyber Incident Response Plan",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      },
+      {
+        "actual_sha256": "21d404a2d57fcfb321bbb7c41739952e8c9390510b3c562891afb6da2918d390",
+        "applicability": "Supports role-boundary and escalation controls while preserving the fictional coordinator label.",
+        "claim_id": "CLM-UAE-008",
+        "locator": "Federal and emirate responsibility sections",
+        "official_url": "https://u.ae/en/about-the-uae/digital-uae/digital-transformation/cooperation-and-collaboration/overseeing-digital-transformation-in-the-uae",
+        "paraphrase": "Federal and emirate-level digital transformation responsibilities are assigned to different named entities, so a simulated coordinator must not imply authority held by those bodies.",
+        "source_id": "SRC-UAE-008",
+        "source_title": "Overseeing digital transformation in the UAE",
+        "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+      }
+    ],
+    "matched_tags": [
+      "accountability",
+      "coordination",
+      "crisis",
+      "data_governance",
+      "human_oversight",
+      "institutional_responsibility",
+      "privacy",
+      "proactive",
+      "public_service",
+      "resilience",
+      "responsible_ai",
+      "synthetic_data",
+      "transparency"
+    ],
+    "source_verification_status": "RAW_SOURCE_VERIFICATION_NOT_PERFORMED_IN_PUBLIC_BUNDLE"
+  },
+  "schema_version": "1.0"
+}

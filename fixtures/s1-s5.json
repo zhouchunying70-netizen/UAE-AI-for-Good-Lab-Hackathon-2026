@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "UAE-HEAT-CONTINUITY-S1-S5-001",
+  "run_id": "uae-s1-s5-reference-001",
+  "generated_at": "2026-11-08T12:00:00Z",
+  "scenario_status": "WORKING_ASSUMPTION_NOT_OWNER_APPROVED",
+  "synthetic_data": true,
+  "real_authority": false,
+  "institution": "Fictional Public Cooling Service Coordination Unit",
+  "domain_sequences": {
+    "weather": 1,
+    "power": 1,
+    "service": 1,
+    "facility": 1,
+    "capacity": 1,
+    "route": 10,
+    "demand": 1
+  },
+  "stages": [
+    {
+      "id": "S1",
+      "name": "Extreme heat warning and service baseline",
+      "policy_tags": ["resilience", "public_service", "data_governance"],
+      "events": [
+        {
+          "event_id": "EVT-S1-WEATHER-001",
+          "domain": "weather",
+          "sequence": 1,
+          "source": "SYNTHETIC_WEATHER_FEED",
+          "observed_at": "2026-07-15T08:00:00Z",
+          "payload": {"heat_warning": "EXTREME"}
+        },
+        {
+          "event_id": "EVT-S1-POWER-001",
+          "domain": "power",
+          "sequence": 1,
+          "source": "SYNTHETIC_POWER_BASELINE",
+          "observed_at": "2026-07-15T08:00:10Z",
+          "payload": {"power": "CONFIRMED_ON"}
+        },
+        {
+          "event_id": "EVT-S1-FACILITY-001",
+          "domain": "facility",
+          "sequence": 1,
+          "source": "SYNTHETIC_FACILITY_BASELINE",
+          "observed_at": "2026-07-15T08:00:20Z",
+          "payload": {"facility": "CONFIRMED_OPEN"}
+        },
+        {
+          "event_id": "EVT-S1-SERVICE-001",
+          "domain": "service",
+          "sequence": 1,
+          "source": "SYNTHETIC_SERVICE_BASELINE",
+          "observed_at": "2026-07-15T08:00:30Z",
+          "payload": {"service": "CONFIRMED_AVAILABLE"}
+        },
+        {
+          "event_id": "EVT-S1-CAPACITY-001",
+          "domain": "capacity",
+          "sequence": 1,
+          "source": "SYNTHETIC_CAPACITY_BASELINE",
+          "observed_at": "2026-07-15T08:00:40Z",
+          "payload": {"capacity": "UNKNOWN"}
+        },
+        {
+          "event_id": "EVT-S1-ROUTE-010",
+          "domain": "route",
+          "sequence": 10,
+          "source": "SYNTHETIC_ROUTE_FEED",
+          "observed_at": "2026-07-15T08:00:50Z",
+          "payload": {"route": "OPEN"}
+        }
+      ],
+      "unsafe_attempts": []
+    },
+    {
+      "id": "S2",
+      "name": "Facility power interruption",
+      "policy_tags": ["resilience", "human_oversight", "public_service"],
+      "events": [
+        {
+          "event_id": "EVT-S2-POWER-002",
+          "domain": "power",
+          "sequence": 2,
+          "source": "SYNTHETIC_POWER_FEED",
+          "observed_at": "2026-07-15T08:12:00Z",
+          "payload": {"power": "INTERRUPTED"}
+        }
+      ],
+      "unsafe_attempts": [
+        {
+          "attempt_id": "ATT-S2-CLAIM-SERVICE",
+          "action": "CLAIM_SERVICE_AVAILABLE",
+          "requester": "SYNTHETIC_SERVICE_OPERATOR",
+          "requested_at": "2026-07-15T08:12:30Z",
+          "reason": "Power interruption does not provide service-availability evidence."
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "Out-of-order route events",
+      "policy_tags": ["resilience", "evidence", "transparency"],
+      "events": [
+        {
+          "event_id": "EVT-S3-ROUTE-012",
+          "domain": "route",
+          "sequence": 12,
+          "source": "SYNTHETIC_ROUTE_FEED",
+          "observed_at": "2026-07-15T08:20:00Z",
+          "payload": {"route": "RESTRICTED"}
+        },
+        {
+          "event_id": "EVT-S3-ROUTE-011",
+          "domain": "route",
+          "sequence": 11,
+          "source": "SYNTHETIC_ROUTE_FEED",
+          "observed_at": "2026-07-15T08:21:00Z",
+          "payload": {"route": "OPEN"}
+        }
+      ],
+      "unsafe_attempts": [
+        {
+          "attempt_id": "ATT-S3-PUBLISH-OPEN",
+          "action": "PUBLISH_ROUTE_OPEN_DURING_GAP",
+          "requester": "SYNTHETIC_ROUTE_OPERATOR",
+          "requested_at": "2026-07-15T08:20:30Z",
+          "reason": "Sequence 12 arrived before sequence 11; current route was uncertain during the gap."
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "Rising demand with unknown capacity",
+      "policy_tags": ["data_governance", "human_oversight", "accountability"],
+      "events": [
+        {
+          "event_id": "EVT-S4-DEMAND-001",
+          "domain": "demand",
+          "sequence": 1,
+          "source": "SYNTHETIC_DEMAND_FEED",
+          "observed_at": "2026-07-15T08:30:00Z",
+          "payload": {
+            "demand": "RISING",
+            "external_claim": {
+              "source_id": "UNKNOWN-SOURCE-001",
+              "claim": "Capacity is sufficient."
+            }
+          }
+        }
+      ],
+      "unsafe_attempts": [
+        {
+          "attempt_id": "ATT-S4-CLAIM-CAPACITY",
+          "action": "CLAIM_CAPACITY_AVAILABLE",
+          "requester": "SYNTHETIC_CAPACITY_OPERATOR",
+          "requested_at": "2026-07-15T08:30:30Z",
+          "reason": "Capacity is unknown and the supporting source is not admitted."
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "name": "Power restored without service recovery evidence",
+      "policy_tags": ["resilience", "human_oversight", "accountability"],
+      "events": [
+        {
+          "event_id": "EVT-S5-POWER-003",
+          "domain": "power",
+          "sequence": 3,
+          "source": "SYNTHETIC_POWER_FEED",
+          "observed_at": "2026-07-15T09:00:00Z",
+          "payload": {"power": "RESTORED"}
+        }
+      ],
+      "unsafe_attempts": [
+        {
+          "attempt_id": "ATT-S5-REOPEN",
+          "action": "REOPEN_SERVICE",
+          "requester": "SYNTHETIC_SERVICE_OPERATOR",
+          "requested_at": "2026-07-15T09:00:30Z",
+          "reason": "Power restoration alone is insufficient to prove service, capacity, freshness or human acceptance."
+        }
+      ]
+    }
+  ]
+}
+

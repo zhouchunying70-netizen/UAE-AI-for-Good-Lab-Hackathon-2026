@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+coverage/
+tmp/
+__pycache__/
+evidence/source-snapshots/*
+!evidence/source-snapshots/README.md
+evidence/work/
+
+

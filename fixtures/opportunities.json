@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "UAE-HEAT-CONTINUITY-S1-S5-001",
+  "opportunities": {
+    "event_records": 11,
+    "stages_requiring_citations": 5,
+    "unsafe_attempts": 4,
+    "unadmitted_external_claims": 1,
+    "s5_false_recovery_opportunities": 1,
+    "evidence_chains": 1
+  },
+  "threshold_status": "PROPOSED_NOT_VALIDATED"
+}
+
