@@ -7,8 +7,8 @@ bundle. Project status does not upgrade Owner authorization.
 | Requirement | Evidence | Status | Remaining gap |
 |---|---|---|---|
 | AI Agent solution and application scenario | Four deterministic roles process staged S1-S5 synthetic events | `PARTIAL` | This is a deterministic local coordination pipeline, not a generative/autonomous multi-Agent system; scenario remains `WORKING_ASSUMPTION_NOT_OWNER_APPROVED` and the coordinator has no real authority |
-| Maximum five-page technical report | Five-page English PDF, source and visual render check | `VERIFIED_LOCAL_5_PAGES` | No remote URL or approved external commit is available because reviewer access is not established |
-| GitHub repository | Redacted publication set and reviewed allowlist | `REVIEWER_ACCESS_NOT_ESTABLISHED` | No remote URL, public reachability or private reviewer-access method is verified |
+| Maximum five-page technical report | Five-page English PDF, source and visual render check | `VERIFIED_PUBLIC_5_PAGES` | Published PDF is anonymously readable at the reviewed repository commit |
+| GitHub repository | Redacted publication set and reviewed allowlist | `VERIFIED_PUBLIC_REPOSITORY` | Anonymous access was verified for the repository, README, knowledge-base files and PDF |
 | Policy/regulation/strategy/standards KB | 12 source records, 8 admitted claims, 7 supporting UAE sources, source metadata, hashes, retrieval and runtime citations | `COMPLETED` for local metadata-first scope | `BLOCKED` for complete domain/global corpus and vectorized/distributed hosting |
 | Y.3172 mapping | SRC/C/PP/M/P/D/SINK engineering mapping | `DOCUMENTED_ONLY` | Engineering mapping, not standards conformity; full standard text not redistributed |
 | ITU AI Readiness Framework 2.0 mapping | Scoped mapping to relevant readiness areas | `DOCUMENTED_ONLY` for candidate scope | Not a full national 13-dimension assessment |
@@ -30,6 +30,7 @@ TECHNICAL_MINIMUM=LOCAL_REVIEWABLE_WITH_DISCLOSED_GAPS
 FORMAL_ELIGIBILITY=CONFIRMED_LIMITED
 TEAM_IDENTITY=OWNER_SUPPLIED
 SCENARIO_AUTHORIZATION=WORKING_ASSUMPTION_NOT_OWNER_APPROVED
-PUBLICATION_AUTHORIZATION=NOT_PERFORMED_PENDING_FINAL_OWNER_APPROVAL
+GITHUB_URL=https://github.com/zhouchunying70-netizen/UAE-AI-for-Good-Lab-Hackathon-2026
+PUBLICATION_AUTHORIZATION=COMPLETED_FOR_REVIEWED_FILE_SET
 EXTERNAL_SUBMISSION=NOT_PERFORMED
 ```

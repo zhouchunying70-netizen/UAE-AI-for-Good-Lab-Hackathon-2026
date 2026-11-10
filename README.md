@@ -1,4 +1,4 @@
-> PUBLICATION STATUS: UNLICENSED local candidate for the UAE hackathon only. Publication has not been performed; this copy is not a public repository.
+> PUBLICATION STATUS: UNLICENSED public repository for the reviewed UAE hackathon file set. No open-source license is granted.
 
 # UAE Public Service Continuity Agent - Public Release Candidate 001
 
@@ -7,15 +7,16 @@ for Good Hackathon 2026. It is built from synthetic data and official source
 metadata only. It does not call an external AI provider, connect to a
 production system, or exercise real institutional authority. It is policy-grounded within a limited, admitted source set.
 
-Current status: `LOCAL_CANDIDATE / ELIGIBILITY_CONFIRMED / SCENARIO_AUTHORIZATION_NOT_VERIFIED / REVIEWER_ACCESS_NOT_ESTABLISHED`.
+Current status: `PUBLIC_REPOSITORY / ELIGIBILITY_CONFIRMED / SCENARIO_SYNTHETIC / ANONYMOUS_ACCESS_VERIFIED`.
 
 The retained participant-specific ITU correspondence confirms registration, the
 submission mailbox `aiforgoodlab@itu.int` and the deadline `2026-11-10 23:59
 UAE time`. The Owner has supplied the final identity for this submission:
 `YiYuan Qiming`, Team Leader `周玉晨 (Yuchen Zhou)`, single-member team. The
-No GitHub remote or reviewer-accessible repository has been established in this
-local candidate. No submission receipt exists. These are operational gates, not
-claims that a public repository or formal submission already exists.
+The reviewer-accessible repository is:
+`https://github.com/zhouchunying70-netizen/UAE-AI-for-Good-Lab-Hackathon-2026`
+The published commit is `5a6b78422490a9101c11a022123ae4ff75202d56`. No
+submission receipt exists until the authorized email is sent and acknowledged.
 
 ## What Runs
 
@@ -97,7 +98,8 @@ institution.
 
 The public page's `Applications closed` state is retained as a page snapshot;
 it does not replace the participant-specific ITU registration confirmation.
-No final submission receipt exists until the authorized email is sent.
+The GitHub publication is limited to this reviewed candidate and does not
+constitute formal event acceptance.
 
 ## Authority Boundary
 
