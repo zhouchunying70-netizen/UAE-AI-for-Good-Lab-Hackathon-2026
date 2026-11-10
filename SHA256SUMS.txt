@@ -11,6 +11,10 @@ d431f1b0e8d15f79ed7b720570825c6108c0e402ae48cf24fb30c82dbace3c03  ./docs/OFFICIA
 9847a27bbc8c6bd3681f8ebb571b3f4bb24ea65580cdcf145bc230d51c6de60b  ./docs/RUNBOOK.md
 dc847d5562816eaec60af528e0b4f14bf19a7a0460bb9c86dadcae6f438f01f9  ./docs/SCENARIO_ALIGNMENT_REVIEW.md
 142fb8911eac4ae8c99c4e9ec2d31ad5929949fce401a2c5850eb1a44cfdf611  ./docs/Y3172_MAPPING.md
+3cd8ef7b3fb8617e6287ed60d5578099217bb67bf16eff5837bce3a1225e1473  ./evidence/agent/policy-adviser/policy-adviser-audit.jsonl
+9f480876ab176ee57682dbe711728513cb6f465369fda7b8d52717d5d0cc69fa  ./evidence/agent/policy-adviser/policy-adviser-e2e.json
+cb3a5669d8009481ed7365dd0d54d77d9a9c44d3766ea7c1e7a76a8437f92310  ./evidence/agent/policy-adviser/policy-adviser-input.json
+7c85b44317e742c47f5d05cfe636c707d8920688d02996cf51cba7712bfc92f6  ./evidence/agent/policy-adviser/policy-adviser-output.json
 6bfae6e6d390f9cb751a69458482aea72ccf4001a5b5bbe857d66a41ca322d78  ./evidence/metrics/reference-metrics.json
 bd54b21dac82f13827b916e8e7b49cbdee43ff8a61c1b8bfc4d599be03cbc9de  ./evidence/runs/reference/audit.jsonl
 a157b98f5dd862683b16674a61ce0a2f8d6b50c2e5442fb41a3b329d743e7152  ./evidence/runs/reference/manifest.json
@@ -18,6 +22,7 @@ a157b98f5dd862683b16674a61ce0a2f8d6b50c2e5442fb41a3b329d743e7152  ./evidence/run
 596719bb55e3b3ffb803ae47421d745f60842b1db45b305f8b83f1b41a900729  ./evidence/runs/technical-test/audit.jsonl
 9dc424f941537d97919e01ec80a764a176e824fbdde07d95117263a5c78170e6  ./evidence/runs/technical-test/manifest.json
 5bc1c928e4d311c1863bdb2e6ca67f261da48073d22384ce3f2ed779a16f486b  ./evidence/runs/technical-test/run.json
+0fe1e7e625ee0727902fe035f93d98df32fdc64598d8348c2d79850be1d0e8a7  ./evidence/scenario-test/technical-scenario-verifier.json
 26159be108b5cf1e9adf76aa95766f5d33aac373ff67974c988adff4af4aba75  ./evidence/source-snapshots/README.md
 95b79a1fae14c46a83161373f3c060ab49544bbb0c08357b83c59dc20ecef8e5  ./evidence/tests/current-closure-demo-output.txt
 f3f7307f5e504d5b8f1fb38d25fecb107ed71668e215b7ed3f379dd9a3e42cc7  ./evidence/tests/current-closure-metrics-output.txt
